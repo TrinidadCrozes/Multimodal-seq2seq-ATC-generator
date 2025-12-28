@@ -1,0 +1,2503 @@
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 552,674
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.7133 |     49.246 |   1.2845 |     41.217 |     0.1
+    2 |   1.2620 |     41.196 |   1.1669 |     38.819 |     0.3
+    3 |   1.1555 |     38.393 |   1.0944 |     36.601 |     0.4
+    4 |   1.0852 |     36.224 |   1.0529 |     34.802 |     0.6
+    5 |   1.0205 |     34.082 |   0.9967 |     33.273 |     0.7
+    6 |   0.9622 |     31.759 |   0.9782 |     33.483 |     0.8
+    7 |   0.9079 |     30.569 |   0.9419 |     31.894 |     1.0
+    8 |   0.8653 |     29.187 |   0.9440 |     31.505 |     1.1
+    9 |   0.8198 |     27.778 |   0.9061 |     29.796 |     1.3
+   10 |   0.7771 |     25.928 |   0.8792 |     28.867 |     1.4
+   11 |   0.7430 |     25.008 |   0.8672 |     28.177 |     1.5
+   12 |   0.7065 |     23.648 |   0.8726 |     28.657 |     1.7
+   13 |   0.6742 |     22.668 |   0.8937 |     29.556 |     1.8
+   14 |   0.6564 |     22.063 |   0.8414 |     26.589 |     2.0
+   15 |   0.6340 |     21.093 |   0.8526 |     26.799 |     2.1
+   16 |   0.5995 |     19.976 |   0.8170 |     25.659 |     2.3
+   17 |   0.5715 |     19.265 |   0.8471 |     25.809 |     2.4
+   18 |   0.5553 |     18.632 |   0.8323 |     26.199 |     2.5
+   19 |   0.5140 |     17.234 |   0.8287 |     25.300 |     2.7
+   20 |   0.5029 |     16.898 |   0.8468 |     25.210 |     2.8
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,341,474
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.2981 |     59.283 |   1.5120 |     43.375 |     0.2
+    2 |   1.4816 |     43.420 |   1.3241 |     40.618 |     0.4
+    3 |   1.3353 |     40.568 |   1.2398 |     38.189 |     0.6
+    4 |   1.2451 |     38.856 |   1.1768 |     36.811 |     0.8
+    5 |   1.1697 |     36.345 |   1.1354 |     36.151 |     1.0
+    6 |   1.1110 |     34.490 |   1.0864 |     34.682 |     1.2
+    7 |   1.0525 |     33.251 |   1.0592 |     33.483 |     1.4
+    8 |   1.0001 |     31.081 |   1.0249 |     32.854 |     1.6
+    9 |   0.9552 |     29.776 |   1.0054 |     32.494 |     1.8
+   10 |   0.9108 |     28.427 |   0.9890 |     31.685 |     2.0
+   11 |   0.8757 |     27.442 |   0.9848 |     31.745 |     2.2
+   12 |   0.8413 |     26.374 |   0.9660 |     30.755 |     2.4
+   13 |   0.8021 |     25.465 |   0.9566 |     30.036 |     2.6
+   14 |   0.7648 |     24.138 |   0.9283 |     28.807 |     2.8
+   15 |   0.7322 |     23.109 |   0.9216 |     29.287 |     3.0
+   16 |   0.6974 |     21.903 |   0.9270 |     28.507 |     3.2
+   17 |   0.6750 |     21.198 |   0.9222 |     28.267 |     3.4
+   18 |   0.6454 |     20.213 |   0.9166 |     27.698 |     3.5
+   19 |   0.6211 |     19.502 |   0.9062 |     27.488 |     3.7
+   20 |   0.5932 |     18.621 |   0.9343 |     27.698 |     3.9
+   21 |   0.5743 |     18.197 |   0.9251 |     28.507 |     4.1
+   22 |   0.5431 |     17.195 |   0.9370 |     27.848 |     4.3
+   23 |   0.5296 |     16.799 |   0.9256 |     27.608 |     4.5
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,472,162
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.0004 |     53.188 |   1.3990 |     41.936 |     0.1
+    2 |   1.3130 |     39.836 |   1.2490 |     39.029 |     0.3
+    3 |   1.1747 |     36.075 |   1.1799 |     36.900 |     0.4
+    4 |   1.0792 |     33.521 |   1.0920 |     34.263 |     0.5
+    5 |   0.9817 |     30.388 |   1.0248 |     32.704 |     0.6
+    6 |   0.9007 |     28.180 |   0.9757 |     30.875 |     0.8
+    7 |   0.8229 |     25.685 |   0.9400 |     30.036 |     0.9
+    8 |   0.7550 |     23.191 |   0.9153 |     28.118 |     1.0
+    9 |   0.7013 |     21.732 |   0.8912 |     27.758 |     1.2
+   10 |   0.6469 |     19.651 |   0.8536 |     26.649 |     1.3
+   11 |   0.6002 |     18.307 |   0.8528 |     26.259 |     1.4
+   12 |   0.5519 |     16.650 |   0.8654 |     27.428 |     1.5
+   13 |   0.5153 |     15.576 |   0.8173 |     24.670 |     1.7
+   14 |   0.4791 |     14.453 |   0.8387 |     26.019 |     1.8
+   15 |   0.4405 |     13.187 |   0.8419 |     25.570 |     1.9
+   16 |   0.4133 |     12.515 |   0.8399 |     25.450 |     2.1
+   17 |   0.3771 |     11.430 |   0.8452 |     24.371 |     2.2
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 602,658
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.5289 |     61.353 |   1.7268 |     44.784 |     0.1
+    2 |   1.7041 |     45.672 |   1.5093 |     43.255 |     0.3
+    3 |   1.5268 |     43.806 |   1.4092 |     41.247 |     0.4
+    4 |   1.4281 |     42.159 |   1.3369 |     40.048 |     0.5
+    5 |   1.3534 |     40.585 |   1.2894 |     40.018 |     0.6
+    6 |   1.2873 |     38.966 |   1.2370 |     38.729 |     0.8
+    7 |   1.2345 |     38.102 |   1.2003 |     37.800 |     0.9
+    8 |   1.1875 |     36.775 |   1.1695 |     36.781 |     1.0
+    9 |   1.1407 |     35.161 |   1.1388 |     36.091 |     1.1
+   10 |   1.1007 |     34.099 |   1.1134 |     36.001 |     1.3
+   11 |   1.0677 |     33.097 |   1.1004 |     35.012 |     1.4
+   12 |   1.0273 |     31.621 |   1.0722 |     34.113 |     1.5
+   13 |   0.9927 |     30.889 |   1.0552 |     33.543 |     1.6
+   14 |   0.9614 |     30.255 |   1.0363 |     33.124 |     1.8
+   15 |   0.9308 |     28.995 |   1.0436 |     32.674 |     1.9
+   16 |   0.8993 |     28.527 |   1.0148 |     31.805 |     2.0
+   17 |   0.8726 |     27.117 |   1.0148 |     31.595 |     2.1
+   18 |   0.8459 |     26.038 |   1.0010 |     31.775 |     2.3
+   19 |   0.8177 |     25.460 |   1.0123 |     32.464 |     2.4
+   20 |   0.7962 |     24.942 |   1.0107 |     31.984 |     2.5
+   21 |   0.7763 |     24.309 |   0.9978 |     30.456 |     2.6
+   22 |   0.7530 |     23.549 |   0.9982 |     30.126 |     2.8
+   23 |   0.7272 |     22.910 |   0.9939 |     30.396 |     2.9
+   24 |   0.7021 |     21.952 |   0.9971 |     30.036 |     3.0
+   25 |   0.6810 |     21.429 |   1.0127 |     29.976 |     3.1
+   26 |   0.6678 |     20.659 |   0.9916 |     29.376 |     3.3
+   27 |   0.6491 |     20.356 |   0.9796 |     28.777 |     3.4
+   28 |   0.6309 |     19.546 |   1.0063 |     29.796 |     3.5
+   29 |   0.6132 |     18.919 |   0.9901 |     28.807 |     3.7
+   30 |   0.6006 |     18.742 |   0.9973 |     28.417 |     3.8
+   31 |   0.5758 |     18.021 |   1.0237 |     29.047 |     3.9
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,604,642
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5795 |     48.200 |   1.2648 |     42.206 |     0.2
+    2 |   1.2533 |     42.066 |   1.2131 |     41.277 |     0.4
+    3 |   1.1634 |     39.203 |   1.1105 |     37.860 |     0.6
+    4 |   1.1103 |     37.716 |   1.0734 |     35.971 |     0.8
+    5 |   1.0595 |     36.318 |   1.0397 |     36.331 |     1.0
+    6 |   1.0222 |     35.216 |   1.0233 |     34.952 |     1.2
+    7 |   0.9787 |     33.950 |   1.0128 |     34.323 |     1.4
+    8 |   0.9497 |     33.075 |   0.9800 |     33.933 |     1.6
+    9 |   0.9296 |     32.050 |   0.9780 |     34.353 |     1.8
+   10 |   0.8866 |     30.773 |   0.9371 |     30.576 |     2.0
+   11 |   0.8603 |     29.325 |   0.8983 |     30.755 |     2.2
+   12 |   0.8356 |     29.000 |   0.8989 |     31.175 |     2.4
+   13 |   0.8012 |     27.635 |   0.8906 |     29.347 |     2.6
+   14 |   0.7670 |     26.396 |   0.8688 |     29.466 |     2.8
+   15 |   0.7407 |     25.581 |   0.8878 |     29.526 |     3.1
+   16 |   0.7186 |     24.705 |   0.8896 |     29.916 |     3.3
+   17 |   0.6934 |     23.830 |   0.8384 |     28.147 |     3.5
+   18 |   0.6616 |     22.778 |   0.8366 |     27.248 |     3.7
+   19 |   0.6445 |     22.178 |   0.8690 |     28.537 |     3.9
+   20 |   0.6081 |     20.659 |   0.8698 |     27.458 |     4.1
+   21 |   0.5776 |     19.811 |   0.8311 |     27.098 |     4.3
+   22 |   0.5580 |     19.243 |   0.8628 |     28.207 |     4.5
+   23 |   0.5422 |     18.814 |   0.8356 |     26.739 |     4.7
+   24 |   0.5151 |     17.751 |   0.8575 |     26.229 |     4.9
+   25 |   0.5037 |     17.261 |   0.8548 |     26.139 |     5.1
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,604,642
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.1266 |     55.423 |   1.4592 |     43.975 |     0.2
+    2 |   1.4487 |     43.855 |   1.3020 |     40.468 |     0.4
+    3 |   1.3136 |     40.601 |   1.2186 |     38.579 |     0.6
+    4 |   1.2196 |     37.810 |   1.1518 |     36.601 |     0.8
+    5 |   1.1402 |     35.750 |   1.1079 |     35.312 |     1.0
+    6 |   1.0771 |     33.587 |   1.0606 |     33.933 |     1.2
+    7 |   1.0166 |     31.979 |   1.0377 |     33.183 |     1.4
+    8 |   0.9602 |     30.333 |   0.9962 |     31.685 |     1.6
+    9 |   0.9072 |     28.450 |   0.9679 |     30.546 |     1.8
+   10 |   0.8600 |     26.886 |   0.9642 |     30.126 |     2.0
+   11 |   0.8176 |     25.476 |   0.9335 |     29.376 |     2.2
+   12 |   0.7715 |     24.364 |   0.9207 |     28.507 |     2.4
+   13 |   0.7359 |     23.202 |   0.9132 |     28.207 |     2.7
+   14 |   0.6976 |     21.930 |   0.9221 |     28.927 |     2.9
+   15 |   0.6672 |     20.972 |   0.9069 |     28.717 |     3.1
+   16 |   0.6328 |     19.756 |   0.9096 |     27.758 |     3.3
+   17 |   0.6055 |     18.522 |   0.9037 |     26.948 |     3.5
+   18 |   0.5771 |     18.208 |   0.8969 |     26.978 |     3.7
+   19 |   0.5487 |     17.399 |   0.9048 |     26.829 |     3.9
+   20 |   0.5212 |     16.226 |   0.9044 |     26.259 |     4.1
+   21 |   0.5028 |     16.072 |   0.9132 |     26.349 |     4.3
+   22 |   0.4797 |     14.938 |   0.9076 |     26.289 |     4.5
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,472,162
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.1770 |     56.646 |   1.4680 |     43.195 |     0.2
+    2 |   1.4536 |     43.519 |   1.3058 |     39.988 |     0.3
+    3 |   1.3161 |     40.590 |   1.2271 |     38.549 |     0.5
+    4 |   1.2193 |     38.124 |   1.1553 |     36.871 |     0.7
+    5 |   1.1464 |     35.910 |   1.1097 |     35.641 |     0.8
+    6 |   1.0822 |     33.950 |   1.0720 |     35.282 |     1.0
+    7 |   1.0281 |     32.282 |   1.0193 |     32.914 |     1.2
+    8 |   0.9688 |     30.657 |   0.9895 |     32.434 |     1.3
+    9 |   0.9254 |     29.182 |   0.9728 |     31.415 |     1.5
+   10 |   0.8809 |     27.921 |   0.9517 |     30.006 |     1.7
+   11 |   0.8348 |     26.385 |   0.9290 |     30.006 |     1.8
+   12 |   0.7942 |     25.074 |   0.9029 |     28.267 |     2.0
+   13 |   0.7567 |     23.665 |   0.9081 |     28.477 |     2.2
+   14 |   0.7301 |     22.762 |   0.9054 |     28.327 |     2.3
+   15 |   0.6879 |     21.600 |   0.8797 |     27.548 |     2.5
+   16 |   0.6590 |     20.301 |   0.8788 |     26.469 |     2.7
+   17 |   0.6185 |     19.238 |   0.8574 |     25.989 |     2.8
+   18 |   0.5960 |     18.539 |   0.8827 |     26.859 |     3.0
+   19 |   0.5718 |     17.729 |   0.8658 |     26.978 |     3.2
+   20 |   0.5460 |     16.958 |   0.8723 |     26.739 |     3.3
+   21 |   0.5239 |     16.705 |   0.8692 |     25.360 |     3.5
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,175,586
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5736 |     47.418 |   1.2488 |     40.468 |     0.2
+    2 |   1.2040 |     40.403 |   1.1248 |     37.590 |     0.4
+    3 |   1.1275 |     38.239 |   1.0962 |     37.470 |     0.6
+    4 |   1.0696 |     36.642 |   1.0279 |     35.042 |     0.7
+    5 |   1.0144 |     34.638 |   1.0229 |     35.761 |     0.9
+    6 |   0.9730 |     33.328 |   0.9778 |     33.034 |     1.1
+    7 |   0.9323 |     31.984 |   0.9555 |     32.974 |     1.3
+    8 |   0.9038 |     31.197 |   0.9481 |     32.464 |     1.5
+    9 |   0.8785 |     30.470 |   0.9219 |     31.745 |     1.7
+   10 |   0.8427 |     29.011 |   0.8983 |     30.216 |     1.9
+   11 |   0.8034 |     27.525 |   0.9107 |     30.426 |     2.1
+   12 |   0.7889 |     27.194 |   0.8718 |     29.406 |     2.2
+   13 |   0.7731 |     26.748 |   0.8635 |     29.496 |     2.4
+   14 |   0.7406 |     25.526 |   0.8715 |     29.107 |     2.6
+   15 |   0.7237 |     24.992 |   0.8589 |     27.968 |     2.8
+   16 |   0.7023 |     24.458 |   0.8462 |     28.777 |     3.0
+   17 |   0.6806 |     23.736 |   0.8492 |     28.327 |     3.2
+   18 |   0.6547 |     22.652 |   0.8270 |     27.818 |     3.4
+   19 |   0.6331 |     22.299 |   0.8404 |     28.207 |     3.6
+   20 |   0.6284 |     21.721 |   0.8531 |     28.447 |     3.7
+   21 |   0.5984 |     20.653 |   0.8219 |     26.888 |     3.9
+   22 |   0.5928 |     20.400 |   0.8361 |     27.068 |     4.1
+   23 |   0.5704 |     19.750 |   0.8414 |     27.428 |     4.3
+   24 |   0.5491 |     19.172 |   0.8445 |     27.428 |     4.5
+   25 |   0.5471 |     19.150 |   0.8369 |     26.379 |     4.7
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 4
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,405,858
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.4531 |     45.777 |   1.2367 |     41.307 |     0.2
+    2 |   1.1723 |     39.852 |   1.1157 |     37.890 |     0.4
+    3 |   1.0786 |     36.841 |   1.0649 |     36.031 |     0.5
+    4 |   0.9914 |     34.066 |   1.0294 |     35.312 |     0.7
+    5 |   0.9446 |     32.551 |   0.9600 |     32.434 |     0.9
+    6 |   0.8911 |     31.120 |   0.9338 |     32.074 |     1.1
+    7 |   0.8550 |     29.821 |   0.9188 |     31.685 |     1.3
+    8 |   0.8118 |     27.965 |   0.8986 |     30.366 |     1.4
+    9 |   0.7777 |     26.869 |   0.8661 |     29.856 |     1.6
+   10 |   0.7452 |     25.779 |   0.8885 |     29.436 |     1.8
+   11 |   0.7198 |     24.843 |   0.8556 |     29.047 |     2.0
+   12 |   0.6892 |     23.891 |   0.8551 |     28.747 |     2.1
+   13 |   0.6624 |     22.822 |   0.8339 |     27.698 |     2.3
+   14 |   0.6376 |     21.980 |   0.8101 |     26.888 |     2.5
+   15 |   0.5949 |     20.372 |   0.8377 |     26.709 |     2.7
+   16 |   0.5755 |     19.937 |   0.8063 |     26.049 |     2.9
+   17 |   0.5519 |     19.232 |   0.7963 |     25.540 |     3.0
+   18 |   0.5294 |     18.451 |   0.8016 |     25.480 |     3.2
+   19 |   0.4970 |     17.179 |   0.7947 |     25.450 |     3.4
+   20 |   0.4896 |     17.168 |   0.7761 |     24.760 |     3.6
+   21 |   0.4532 |     15.610 |   0.8357 |     26.229 |     3.8
+   22 |   0.4472 |     15.367 |   0.7763 |     24.311 |     3.9
+   23 |   0.4026 |     14.051 |   0.8173 |     24.281 |     4.1
+   24 |   0.3971 |     13.842 |   0.7954 |     24.011 |     4.3
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,604,642
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.9640 |     52.538 |   1.3962 |     41.996 |     0.2
+    2 |   1.3095 |     39.968 |   1.2442 |     39.059 |     0.4
+    3 |   1.1640 |     36.202 |   1.1476 |     35.222 |     0.6
+    4 |   1.0572 |     32.651 |   1.0740 |     33.663 |     0.8
+    5 |   0.9583 |     29.518 |   1.0038 |     31.984 |     0.9
+    6 |   0.8772 |     27.134 |   0.9613 |     30.006 |     1.1
+    7 |   0.8042 |     24.760 |   0.9348 |     29.077 |     1.3
+    8 |   0.7361 |     22.531 |   0.9089 |     28.447 |     1.5
+    9 |   0.6839 |     20.989 |   0.8839 |     28.207 |     1.7
+   10 |   0.6210 |     18.759 |   0.8776 |     26.529 |     1.9
+   11 |   0.5726 |     17.245 |   0.8427 |     25.450 |     2.1
+   12 |   0.5212 |     15.384 |   0.8710 |     25.749 |     2.3
+   13 |   0.4806 |     14.228 |   0.8404 |     25.420 |     2.5
+   14 |   0.4449 |     13.269 |   0.8427 |     25.180 |     2.7
+   15 |   0.4088 |     12.234 |   0.8427 |     24.910 |     2.8
+   16 |   0.3862 |     11.513 |   0.8413 |     25.030 |     3.0
+   17 |   0.3525 |     10.561 |   0.8409 |     24.940 |     3.2
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 470,562
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.6462 |     66.138 |   1.9425 |     48.231 |     0.2
+    2 |   1.8391 |     47.330 |   1.5654 |     44.275 |     0.3
+    3 |   1.5900 |     44.901 |   1.4495 |     43.135 |     0.5
+    4 |   1.4811 |     43.729 |   1.3770 |     42.176 |     0.7
+    5 |   1.4009 |     42.534 |   1.3194 |     40.917 |     0.8
+    6 |   1.3422 |     40.981 |   1.2782 |     39.838 |     1.0
+    7 |   1.2888 |     39.654 |   1.2369 |     38.279 |     1.2
+    8 |   1.2380 |     38.415 |   1.1960 |     37.290 |     1.3
+    9 |   1.1942 |     36.989 |   1.1715 |     37.200 |     1.5
+   10 |   1.1590 |     35.778 |   1.1476 |     36.241 |     1.7
+   11 |   1.1205 |     34.864 |   1.1186 |     35.312 |     1.8
+   12 |   1.0866 |     33.306 |   1.1115 |     35.821 |     2.0
+   13 |   1.0526 |     32.629 |   1.0917 |     34.592 |     2.2
+   14 |   1.0252 |     32.155 |   1.0749 |     33.663 |     2.3
+   15 |   0.9926 |     30.746 |   1.0582 |     33.333 |     2.5
+   16 |   0.9657 |     29.782 |   1.0291 |     32.164 |     2.7
+   17 |   0.9396 |     28.664 |   1.0232 |     32.104 |     2.8
+   18 |   0.9162 |     27.998 |   1.0154 |     32.584 |     3.0
+   19 |   0.8972 |     27.926 |   1.0181 |     31.655 |     3.2
+   20 |   0.8707 |     27.200 |   1.0021 |     31.115 |     3.3
+   21 |   0.8446 |     26.142 |   0.9807 |     30.546 |     3.5
+   22 |   0.8233 |     25.779 |   0.9920 |     30.695 |     3.7
+   23 |   0.8022 |     24.871 |   0.9828 |     30.366 |     3.8
+   24 |   0.7839 |     24.133 |   0.9845 |     30.456 |     4.0
+   25 |   0.7625 |     23.951 |   0.9879 |     30.306 |     4.2
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 602,658
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.4271 |     59.443 |   1.7189 |     44.604 |     0.2
+    2 |   1.5825 |     44.164 |   1.4889 |     42.416 |     0.3
+    3 |   1.4137 |     40.965 |   1.3707 |     39.748 |     0.5
+    4 |   1.3000 |     38.250 |   1.2778 |     38.100 |     0.6
+    5 |   1.2105 |     36.130 |   1.2263 |     37.110 |     0.8
+    6 |   1.1402 |     34.220 |   1.1632 |     35.881 |     0.9
+    7 |   1.0780 |     32.524 |   1.1154 |     35.132 |     1.1
+    8 |   1.0156 |     30.525 |   1.0939 |     34.502 |     1.3
+    9 |   0.9646 |     29.050 |   1.0520 |     32.974 |     1.4
+   10 |   0.9124 |     27.635 |   1.0227 |     31.715 |     1.6
+   11 |   0.8603 |     26.076 |   0.9775 |     30.276 |     1.7
+   12 |   0.8237 |     24.926 |   0.9609 |     29.376 |     1.9
+   13 |   0.7741 |     23.582 |   0.9739 |     30.276 |     2.1
+   14 |   0.7347 |     22.030 |   0.9424 |     28.867 |     2.2
+   15 |   0.6978 |     20.675 |   0.9205 |     27.968 |     2.4
+   16 |   0.6586 |     19.645 |   0.8943 |     27.158 |     2.5
+   17 |   0.6316 |     18.748 |   0.8971 |     26.769 |     2.7
+   18 |   0.5974 |     17.438 |   0.9083 |     27.308 |     2.8
+   19 |   0.5723 |     16.964 |   0.8816 |     26.109 |     3.0
+   20 |   0.5371 |     15.995 |   0.8917 |     26.649 |     3.2
+   21 |   0.5166 |     14.927 |   0.8967 |     26.289 |     3.3
+   22 |   0.4882 |     14.255 |   0.8884 |     26.049 |     3.5
+   23 |   0.4717 |     13.649 |   0.8680 |     25.300 |     3.6
+   24 |   0.4398 |     12.906 |   0.8859 |     25.659 |     3.8
+   25 |   0.4241 |     12.405 |   0.9358 |     26.829 |     4.0
+   26 |   0.4039 |     11.810 |   0.8991 |     25.180 |     4.1
+   27 |   0.3931 |     11.618 |   0.8785 |     25.360 |     4.3
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,241,890
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.3738 |     60.704 |   1.5408 |     43.675 |     0.1
+    2 |   1.5013 |     43.938 |   1.3284 |     41.607 |     0.3
+    3 |   1.3399 |     41.020 |   1.2440 |     39.299 |     0.4
+    4 |   1.2500 |     38.927 |   1.1794 |     37.980 |     0.5
+    5 |   1.1814 |     37.199 |   1.1313 |     36.391 |     0.7
+    6 |   1.1205 |     35.409 |   1.1077 |     35.432 |     0.8
+    7 |   1.0720 |     33.889 |   1.0791 |     35.072 |     0.9
+    8 |   1.0304 |     32.425 |   1.0434 |     33.753 |     1.0
+    9 |   0.9791 |     30.922 |   1.0037 |     31.685 |     1.2
+   10 |   0.9419 |     29.600 |   1.0061 |     32.434 |     1.3
+   11 |   0.9002 |     28.279 |   0.9802 |     31.175 |     1.4
+   12 |   0.8615 |     27.062 |   0.9533 |     30.875 |     1.6
+   13 |   0.8266 |     26.258 |   0.9476 |     29.826 |     1.7
+   14 |   0.7978 |     25.129 |   0.9291 |     28.957 |     1.8
+   15 |   0.7581 |     23.907 |   0.9316 |     29.347 |     2.0
+   16 |   0.7346 |     23.279 |   0.9169 |     28.537 |     2.1
+   17 |   0.6982 |     21.958 |   0.9015 |     28.088 |     2.2
+   18 |   0.6721 |     21.171 |   0.8932 |     28.177 |     2.4
+   19 |   0.6467 |     20.581 |   0.8989 |     27.998 |     2.5
+   20 |   0.6251 |     19.998 |   0.9120 |     28.177 |     2.6
+   21 |   0.5966 |     18.737 |   0.9058 |     27.458 |     2.8
+   22 |   0.5807 |     18.197 |   0.9133 |     27.098 |     2.9
+   23 |   0.5615 |     17.647 |   0.8925 |     27.098 |     3.0
+   24 |   0.5321 |     16.837 |   0.8930 |     26.319 |     3.2
+   25 |   0.5196 |     16.386 |   0.8953 |     26.619 |     3.3
+   26 |   0.5077 |     15.874 |   0.9113 |     26.799 |     3.4
+   27 |   0.4890 |     15.307 |   0.9082 |     26.559 |     3.6
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 3
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 485,922
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.5841 |     61.871 |   1.8463 |     46.313 |     0.1
+    2 |   1.7506 |     46.008 |   1.5310 |     43.795 |     0.3
+    3 |   1.5404 |     43.960 |   1.4212 |     42.116 |     0.4
+    4 |   1.4361 |     42.352 |   1.3457 |     40.498 |     0.5
+    5 |   1.3571 |     40.128 |   1.2851 |     39.388 |     0.7
+    6 |   1.2935 |     38.680 |   1.2330 |     37.350 |     0.8
+    7 |   1.2320 |     36.830 |   1.1934 |     37.020 |     0.9
+    8 |   1.1849 |     36.108 |   1.1717 |     36.511 |     1.1
+    9 |   1.1351 |     34.528 |   1.1425 |     35.462 |     1.2
+   10 |   1.1010 |     33.504 |   1.1082 |     34.982 |     1.3
+   11 |   1.0568 |     32.524 |   1.0960 |     34.323 |     1.5
+   12 |   1.0275 |     31.313 |   1.0655 |     33.483 |     1.6
+   13 |   0.9914 |     30.426 |   1.0474 |     32.944 |     1.7
+   14 |   0.9572 |     29.022 |   1.0331 |     32.644 |     1.9
+   15 |   0.9239 |     28.042 |   1.0198 |     31.745 |     2.0
+   16 |   0.9021 |     27.712 |   1.0101 |     32.014 |     2.1
+   17 |   0.8742 |     27.321 |   1.0041 |     31.745 |     2.3
+   18 |   0.8447 |     26.076 |   0.9917 |     30.815 |     2.4
+   19 |   0.8215 |     25.262 |   0.9789 |     30.186 |     2.5
+   20 |   0.7971 |     24.474 |   0.9715 |     30.126 |     2.7
+   21 |   0.7787 |     24.067 |   0.9843 |     31.025 |     2.8
+   22 |   0.7611 |     23.362 |   0.9636 |     29.916 |     2.9
+   23 |   0.7372 |     22.514 |   0.9766 |     30.755 |     3.0
+   24 |   0.7180 |     22.195 |   0.9614 |     29.077 |     3.2
+   25 |   0.6956 |     21.523 |   0.9890 |     29.047 |     3.3
+   26 |   0.6842 |     21.330 |   0.9786 |     29.526 |     3.4
+   27 |   0.6639 |     20.752 |   0.9579 |     28.447 |     3.6
+   28 |   0.6449 |     20.047 |   0.9675 |     29.167 |     3.7
+   29 |   0.6276 |     19.387 |   0.9759 |     28.477 |     3.8
+   30 |   0.6108 |     19.089 |   0.9739 |     28.867 |     4.0
+   31 |   0.5957 |     18.456 |   0.9661 |     28.058 |     4.1
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 535,906
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5856 |     46.256 |   1.2854 |     41.307 |     0.1
+    2 |   1.2061 |     40.084 |   1.1742 |     38.939 |     0.2
+    3 |   1.1042 |     37.210 |   1.0599 |     35.462 |     0.3
+    4 |   1.0083 |     33.834 |   1.0395 |     34.532 |     0.4
+    5 |   0.9359 |     31.175 |   0.9745 |     32.554 |     0.5
+    6 |   0.8742 |     29.446 |   0.9430 |     31.655 |     0.6
+    7 |   0.8294 |     28.009 |   0.9033 |     29.376 |     0.8
+    8 |   0.7780 |     25.928 |   0.8747 |     29.077 |     0.9
+    9 |   0.7264 |     24.281 |   0.8846 |     29.556 |     1.0
+   10 |   0.6933 |     23.263 |   0.8537 |     27.128 |     1.1
+   11 |   0.6575 |     22.250 |   0.8257 |     26.589 |     1.2
+   12 |   0.6124 |     20.697 |   0.8176 |     26.709 |     1.3
+   13 |   0.5787 |     19.475 |   0.8250 |     26.379 |     1.4
+   14 |   0.5489 |     18.390 |   0.7987 |     25.270 |     1.5
+   15 |   0.5262 |     17.713 |   0.8163 |     25.959 |     1.6
+   16 |   0.4925 |     16.810 |   0.7908 |     25.000 |     1.7
+   17 |   0.4920 |     16.782 |   0.7828 |     23.621 |     1.8
+   18 |   0.4559 |     15.494 |   0.8088 |     24.700 |     2.0
+   19 |   0.4205 |     14.145 |   0.7962 |     23.621 |     2.1
+   20 |   0.4032 |     13.897 |   0.8201 |     23.801 |     2.2
+   21 |   0.3840 |     13.192 |   0.8169 |     24.490 |     2.3
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,175,586
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5421 |     46.691 |   1.2569 |     42.056 |     0.1
+    2 |   1.2365 |     40.915 |   1.1963 |     41.307 |     0.3
+    3 |   1.1619 |     38.812 |   1.1029 |     36.990 |     0.4
+    4 |   1.0958 |     37.094 |   1.0736 |     36.691 |     0.6
+    5 |   1.0502 |     35.657 |   1.0826 |     36.751 |     0.7
+    6 |   1.0044 |     34.236 |   1.0083 |     34.862 |     0.9
+    7 |   0.9603 |     32.810 |   1.0024 |     34.922 |     1.0
+    8 |   0.9147 |     31.004 |   0.9645 |     32.704 |     1.2
+    9 |   0.8974 |     30.536 |   0.9947 |     33.663 |     1.3
+   10 |   0.8483 |     28.593 |   0.9627 |     32.914 |     1.5
+   11 |   0.8290 |     28.136 |   0.9749 |     32.674 |     1.6
+   12 |   0.8124 |     27.414 |   0.9693 |     32.794 |     1.8
+   13 |   0.7834 |     27.012 |   0.9621 |     32.434 |     1.9
+   14 |   0.7514 |     25.801 |   0.9607 |     32.734 |     2.1
+   15 |   0.7133 |     24.678 |   0.9862 |     31.924 |     2.2
+   16 |   0.7017 |     23.753 |   0.9508 |     31.115 |     2.4
+   17 |   0.6762 |     23.065 |   0.9722 |     31.055 |     2.5
+   18 |   0.6602 |     22.470 |   0.9428 |     30.785 |     2.7
+   19 |   0.6468 |     21.848 |   1.0089 |     32.434 |     2.8
+   20 |   0.6165 |     21.105 |   1.0410 |     31.625 |     3.0
+   21 |   0.6167 |     21.286 |   0.9743 |     30.785 |     3.1
+   22 |   0.5887 |     20.031 |   1.0427 |     30.755 |     3.3
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,341,474
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5847 |     47.610 |   1.2966 |     42.626 |     0.2
+    2 |   1.2647 |     42.016 |   1.1904 |     39.958 |     0.3
+    3 |   1.1874 |     40.001 |   1.1656 |     40.078 |     0.5
+    4 |   1.1251 |     38.190 |   1.0921 |     36.481 |     0.6
+    5 |   1.0830 |     36.791 |   1.0702 |     36.990 |     0.8
+    6 |   1.0411 |     35.651 |   1.0428 |     35.552 |     0.9
+    7 |   0.9985 |     34.115 |   1.0255 |     34.323 |     1.1
+    8 |   0.9616 |     32.750 |   1.0036 |     34.113 |     1.3
+    9 |   0.9290 |     31.836 |   0.9677 |     33.094 |     1.4
+   10 |   0.8898 |     30.294 |   0.9701 |     32.134 |     1.6
+   11 |   0.8641 |     29.699 |   0.9786 |     32.134 |     1.7
+   12 |   0.8356 |     28.477 |   0.9699 |     31.954 |     1.9
+   13 |   0.8123 |     27.844 |   0.9484 |     31.655 |     2.1
+   14 |   0.7891 |     27.034 |   0.9674 |     32.464 |     2.2
+   15 |   0.7544 |     25.570 |   0.9444 |     33.004 |     2.4
+   16 |   0.7336 |     25.014 |   0.9329 |     31.385 |     2.5
+   17 |   0.7086 |     24.188 |   0.9283 |     31.625 |     2.7
+   18 |   0.6918 |     24.072 |   0.9211 |     30.755 |     2.9
+   19 |   0.7004 |     24.138 |   0.9471 |     32.824 |     3.0
+   20 |   0.6683 |     22.701 |   0.9166 |     30.905 |     3.2
+   21 |   0.6249 |     21.325 |   0.9430 |     31.625 |     3.3
+   22 |   0.6198 |     21.165 |   0.9289 |     31.385 |     3.5
+   23 |   0.5979 |     20.356 |   0.9652 |     31.505 |     3.6
+   24 |   0.5815 |     19.976 |   0.9614 |     31.595 |     3.8
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 4
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 420,322
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.6116 |     46.658 |   1.2785 |     41.906 |     0.1
+    2 |   1.2048 |     39.930 |   1.1502 |     38.040 |     0.3
+    3 |   1.0894 |     36.527 |   1.0966 |     36.451 |     0.4
+    4 |   0.9911 |     33.493 |   1.0189 |     33.903 |     0.6
+    5 |   0.9202 |     31.175 |   0.9785 |     31.565 |     0.7
+    6 |   0.8636 |     29.215 |   0.9391 |     31.445 |     0.9
+    7 |   0.8075 |     27.519 |   0.9126 |     30.486 |     1.0
+    8 |   0.7551 |     25.614 |   0.9413 |     30.126 |     1.2
+    9 |   0.7128 |     24.232 |   0.8608 |     27.668 |     1.3
+   10 |   0.6770 |     22.999 |   0.8465 |     27.278 |     1.5
+   11 |   0.6268 |     21.330 |   0.8311 |     27.218 |     1.6
+   12 |   0.5932 |     20.036 |   0.8188 |     26.169 |     1.8
+   13 |   0.5702 |     19.354 |   0.8203 |     25.689 |     1.9
+   14 |   0.5326 |     18.346 |   0.8317 |     26.948 |     2.0
+   15 |   0.5146 |     17.658 |   0.8289 |     26.169 |     2.2
+   16 |   0.4856 |     16.568 |   0.8278 |     25.779 |     2.3
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 3
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 386,850
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.7365 |     64.888 |   1.9441 |     44.904 |     0.1
+    2 |   1.8557 |     45.870 |   1.5723 |     43.165 |     0.2
+    3 |   1.6045 |     44.511 |   1.4548 |     42.716 |     0.3
+    4 |   1.4929 |     43.547 |   1.3830 |     42.116 |     0.4
+    5 |   1.4112 |     42.027 |   1.3298 |     40.737 |     0.5
+    6 |   1.3469 |     40.634 |   1.2794 |     39.478 |     0.6
+    7 |   1.2929 |     39.258 |   1.2482 |     39.119 |     0.7
+    8 |   1.2440 |     38.024 |   1.2193 |     38.070 |     0.7
+    9 |   1.2030 |     36.808 |   1.1867 |     37.140 |     0.8
+   10 |   1.1642 |     36.009 |   1.1609 |     36.960 |     0.9
+   11 |   1.1334 |     35.073 |   1.1421 |     35.761 |     1.0
+   12 |   1.0980 |     33.950 |   1.1236 |     35.641 |     1.1
+   13 |   1.0689 |     32.942 |   1.1006 |     35.701 |     1.2
+   14 |   1.0391 |     32.166 |   1.0770 |     34.592 |     1.3
+   15 |   1.0151 |     31.307 |   1.0648 |     33.903 |     1.4
+   16 |   0.9912 |     30.988 |   1.0541 |     33.693 |     1.5
+   17 |   0.9607 |     29.413 |   1.0552 |     33.333 |     1.6
+   18 |   0.9383 |     28.923 |   1.0330 |     32.854 |     1.7
+   19 |   0.9125 |     28.147 |   1.0298 |     32.614 |     1.8
+   20 |   0.8915 |     27.756 |   1.0128 |     31.775 |     1.9
+   21 |   0.8685 |     26.858 |   1.0207 |     32.044 |     2.0
+   22 |   0.8477 |     26.445 |   0.9959 |     31.625 |     2.1
+   23 |   0.8336 |     25.906 |   1.0066 |     31.775 |     2.2
+   24 |   0.8199 |     25.669 |   1.0009 |     30.905 |     2.2
+   25 |   0.7907 |     24.639 |   0.9980 |     31.145 |     2.3
+   26 |   0.7810 |     24.425 |   0.9996 |     31.055 |     2.4
+   27 |   0.7597 |     23.835 |   0.9828 |     30.456 |     2.5
+   28 |   0.7468 |     23.230 |   0.9813 |     30.546 |     2.6
+   29 |   0.7290 |     22.927 |   1.0017 |     30.306 |     2.7
+   30 |   0.7141 |     22.542 |   0.9796 |     30.186 |     2.8
+   31 |   0.7008 |     22.024 |   0.9888 |     30.066 |     2.9
+   32 |   0.6852 |     21.435 |   0.9897 |     30.036 |     3.0
+   33 |   0.6737 |     21.286 |   0.9870 |     29.796 |     3.1
+   34 |   0.6664 |     20.703 |   0.9927 |     30.096 |     3.2
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,604,642
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5873 |     48.403 |   1.2952 |     44.275 |     0.2
+    2 |   1.2682 |     42.655 |   1.1870 |     39.209 |     0.3
+    3 |   1.1866 |     40.304 |   1.1418 |     39.179 |     0.5
+    4 |   1.1407 |     38.355 |   1.1099 |     37.800 |     0.7
+    5 |   1.0908 |     37.386 |   1.0554 |     35.911 |     0.8
+    6 |   1.0444 |     35.607 |   1.0572 |     35.851 |     1.0
+    7 |   1.0018 |     34.203 |   1.0302 |     36.001 |     1.2
+    8 |   0.9715 |     33.322 |   1.0217 |     33.933 |     1.3
+    9 |   0.9496 |     32.854 |   0.9760 |     32.704 |     1.5
+   10 |   0.9099 |     31.450 |   0.9440 |     32.074 |     1.6
+   11 |   0.8781 |     30.046 |   0.9444 |     31.655 |     1.8
+   12 |   0.8371 |     28.543 |   0.8967 |     30.516 |     2.0
+   13 |   0.8100 |     27.684 |   0.9175 |     30.695 |     2.1
+   14 |   0.7877 |     26.528 |   0.8900 |     29.946 |     2.3
+   15 |   0.7598 |     25.994 |   0.8645 |     29.376 |     2.5
+   16 |   0.7284 |     24.794 |   0.8657 |     28.537 |     2.6
+   17 |   0.6946 |     23.709 |   0.8663 |     28.058 |     2.8
+   18 |   0.6785 |     23.175 |   0.8480 |     27.368 |     3.0
+   19 |   0.6564 |     22.800 |   0.8693 |     28.207 |     3.1
+   20 |   0.6198 |     21.484 |   0.8492 |     26.589 |     3.3
+   21 |   0.6040 |     20.642 |   0.8532 |     27.698 |     3.5
+   22 |   0.5689 |     19.640 |   0.8489 |     26.978 |     3.6
+   23 |   0.5466 |     18.643 |   0.8025 |     26.049 |     3.8
+   24 |   0.5255 |     18.087 |   0.8410 |     25.779 |     4.0
+   25 |   0.5044 |     17.278 |   0.8417 |     25.270 |     4.1
+   26 |   0.4806 |     16.391 |   0.8385 |     25.000 |     4.3
+   27 |   0.4582 |     15.956 |   0.8680 |     25.869 |     4.5
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 420,322
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.7994 |     69.761 |   2.0357 |     48.861 |     0.2
+    2 |   1.8584 |     47.297 |   1.5618 |     44.544 |     0.3
+    3 |   1.5772 |     44.797 |   1.4401 |     42.956 |     0.5
+    4 |   1.4640 |     43.084 |   1.3655 |     41.007 |     0.6
+    5 |   1.3829 |     41.152 |   1.3051 |     39.598 |     0.8
+    6 |   1.3229 |     40.012 |   1.2663 |     38.639 |     1.0
+    7 |   1.2656 |     38.790 |   1.2254 |     38.100 |     1.1
+    8 |   1.2243 |     37.755 |   1.1946 |     38.010 |     1.3
+    9 |   1.1802 |     36.202 |   1.1615 |     36.631 |     1.4
+   10 |   1.1415 |     35.233 |   1.1434 |     36.721 |     1.6
+   11 |   1.1027 |     33.972 |   1.1188 |     35.911 |     1.7
+   12 |   1.0716 |     32.970 |   1.0945 |     35.192 |     1.9
+   13 |   1.0377 |     32.161 |   1.0796 |     34.293 |     2.1
+   14 |   1.0081 |     31.252 |   1.0568 |     33.693 |     2.2
+   15 |   0.9803 |     30.134 |   1.0397 |     32.914 |     2.4
+   16 |   0.9512 |     29.507 |   1.0252 |     32.884 |     2.5
+   17 |   0.9236 |     28.257 |   1.0297 |     33.004 |     2.7
+   18 |   0.8965 |     27.563 |   1.0212 |     32.134 |     2.9
+   19 |   0.8676 |     26.611 |   1.0143 |     32.404 |     3.0
+   20 |   0.8451 |     26.220 |   0.9916 |     31.355 |     3.2
+   21 |   0.8255 |     25.416 |   0.9914 |     30.905 |     3.3
+   22 |   0.8031 |     24.744 |   0.9916 |     30.576 |     3.5
+   23 |   0.7834 |     24.315 |   0.9943 |     30.785 |     3.7
+   24 |   0.7675 |     23.769 |   0.9789 |     30.396 |     3.8
+   25 |   0.7483 |     23.279 |   0.9806 |     29.586 |     4.0
+   26 |   0.7284 |     22.503 |   0.9843 |     30.156 |     4.1
+   27 |   0.7081 |     22.173 |   0.9889 |     29.556 |     4.3
+   28 |   0.6915 |     21.402 |   0.9889 |     29.047 |     4.4
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 420,322
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.4901 |     59.162 |   1.8193 |     43.705 |     0.1
+    2 |   1.6466 |     44.092 |   1.5290 |     42.656 |     0.2
+    3 |   1.4662 |     42.237 |   1.4156 |     40.947 |     0.3
+    4 |   1.3608 |     40.370 |   1.3430 |     40.198 |     0.4
+    5 |   1.2850 |     38.955 |   1.2822 |     38.909 |     0.5
+    6 |   1.2178 |     37.441 |   1.2442 |     38.100 |     0.6
+    7 |   1.1611 |     35.767 |   1.2032 |     37.350 |     0.7
+    8 |   1.1150 |     34.352 |   1.1672 |     35.731 |     0.8
+    9 |   1.0721 |     32.524 |   1.1355 |     35.222 |     0.9
+   10 |   1.0253 |     31.092 |   1.1062 |     34.712 |     1.0
+   11 |   0.9922 |     30.261 |   1.0897 |     34.442 |     1.2
+   12 |   0.9522 |     29.220 |   1.0666 |     33.483 |     1.3
+   13 |   0.9182 |     28.224 |   1.0420 |     32.944 |     1.4
+   14 |   0.8741 |     26.754 |   1.0371 |     32.914 |     1.5
+   15 |   0.8410 |     25.807 |   1.0080 |     31.145 |     1.6
+   16 |   0.8114 |     25.212 |   0.9999 |     30.905 |     1.7
+   17 |   0.7745 |     23.340 |   0.9888 |     30.216 |     1.8
+   18 |   0.7517 |     22.905 |   0.9767 |     29.706 |     1.9
+   19 |   0.7264 |     22.052 |   0.9557 |     29.347 |     2.0
+   20 |   0.6875 |     20.857 |   0.9670 |     29.496 |     2.1
+   21 |   0.6655 |     20.323 |   0.9432 |     28.867 |     2.2
+   22 |   0.6388 |     19.376 |   0.9536 |     29.586 |     2.3
+   23 |   0.6124 |     18.197 |   0.9382 |     28.897 |     2.4
+   24 |   0.5946 |     17.713 |   0.9412 |     28.387 |     2.5
+   25 |   0.5772 |     17.570 |   0.9423 |     28.717 |     2.6
+   26 |   0.5561 |     16.711 |   0.9419 |     27.788 |     2.7
+   27 |   0.5314 |     15.709 |   0.9408 |     27.998 |     2.8
+   28 |   0.5149 |     15.444 |   0.9282 |     27.608 |     2.9
+   29 |   0.4990 |     14.965 |   0.9226 |     26.709 |     3.0
+   30 |   0.4767 |     14.046 |   0.9280 |     27.548 |     3.1
+   31 |   0.4659 |     14.029 |   0.9355 |     26.948 |     3.3
+   32 |   0.4489 |     13.457 |   0.9307 |     26.859 |     3.4
+   33 |   0.4330 |     12.978 |   0.9298 |     27.038 |     3.5
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 470,562
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.7655 |     50.055 |   1.3145 |     42.356 |     0.2
+    2 |   1.2811 |     41.978 |   1.2120 |     40.767 |     0.3
+    3 |   1.1901 |     39.737 |   1.1495 |     38.849 |     0.5
+    4 |   1.1256 |     37.788 |   1.1004 |     37.770 |     0.7
+    5 |   1.0646 |     36.081 |   1.0354 |     35.192 |     0.8
+    6 |   1.0172 |     34.308 |   1.0074 |     34.323 |     1.0
+    7 |   0.9777 |     33.058 |   0.9808 |     32.944 |     1.2
+    8 |   0.9410 |     31.604 |   0.9685 |     32.404 |     1.3
+    9 |   0.8964 |     30.184 |   0.9305 |     31.355 |     1.5
+   10 |   0.8645 |     29.094 |   0.9095 |     30.576 |     1.7
+   11 |   0.8307 |     28.147 |   0.9345 |     31.265 |     1.8
+   12 |   0.7878 |     26.308 |   0.8922 |     29.436 |     2.0
+   13 |   0.7581 |     25.531 |   0.8754 |     29.646 |     2.2
+   14 |   0.7284 |     24.711 |   0.8746 |     28.297 |     2.3
+   15 |   0.6997 |     23.483 |   0.8626 |     28.088 |     2.5
+   16 |   0.6807 |     23.054 |   0.8662 |     28.627 |     2.7
+   17 |   0.6635 |     22.602 |   0.8732 |     27.608 |     2.8
+   18 |   0.6373 |     21.550 |   0.8392 |     27.728 |     3.0
+   19 |   0.6026 |     20.378 |   0.8702 |     27.668 |     3.2
+   20 |   0.5887 |     19.767 |   0.8291 |     25.689 |     3.3
+   21 |   0.5576 |     18.709 |   0.8540 |     26.589 |     3.5
+   22 |   0.5329 |     18.104 |   0.8586 |     26.559 |     3.7
+   23 |   0.5305 |     18.049 |   0.8607 |     26.379 |     3.8
+   24 |   0.5076 |     17.267 |   0.8525 |     25.450 |     4.0
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,341,474
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.0874 |     53.871 |   1.4733 |     42.596 |     0.1
+    2 |   1.3565 |     41.190 |   1.2876 |     38.789 |     0.3
+    3 |   1.2103 |     37.424 |   1.1928 |     37.320 |     0.4
+    4 |   1.1063 |     34.396 |   1.1047 |     34.682 |     0.6
+    5 |   1.0164 |     31.660 |   1.0469 |     32.614 |     0.7
+    6 |   0.9409 |     29.408 |   0.9903 |     31.295 |     0.9
+    7 |   0.8661 |     26.875 |   0.9582 |     30.486 |     1.0
+    8 |   0.8030 |     24.854 |   0.9365 |     28.627 |     1.2
+    9 |   0.7419 |     23.257 |   0.9220 |     28.897 |     1.3
+   10 |   0.6910 |     21.198 |   0.9049 |     28.088 |     1.5
+   11 |   0.6367 |     19.486 |   0.8659 |     26.679 |     1.6
+   12 |   0.5910 |     18.021 |   0.8564 |     26.769 |     1.8
+   13 |   0.5489 |     16.661 |   0.8519 |     26.739 |     1.9
+   14 |   0.5103 |     14.987 |   0.8711 |     26.769 |     2.1
+   15 |   0.4794 |     14.673 |   0.8287 |     25.000 |     2.2
+   16 |   0.4487 |     13.561 |   0.8393 |     25.030 |     2.4
+   17 |   0.4183 |     12.746 |   0.8353 |     24.760 |     2.5
+   18 |   0.3778 |     11.260 |   0.8276 |     24.550 |     2.7
+   19 |   0.3579 |     10.929 |   0.8667 |     24.910 |     2.8
+   20 |   0.3405 |     10.203 |   0.8663 |     24.790 |     3.0
+   21 |   0.3148 |      9.454 |   0.8663 |     24.640 |     3.1
+   22 |   0.2974 |      9.085 |   0.8693 |     24.341 |     3.3
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,341,474
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.6228 |     48.899 |   1.2782 |     41.667 |     0.2
+    2 |   1.2455 |     41.747 |   1.1894 |     40.168 |     0.4
+    3 |   1.1583 |     39.340 |   1.1385 |     39.388 |     0.6
+    4 |   1.0889 |     37.226 |   1.0682 |     36.361 |     0.8
+    5 |   1.0492 |     35.987 |   1.0277 |     35.312 |     1.0
+    6 |   1.0006 |     33.978 |   1.0175 |     34.502 |     1.2
+    7 |   0.9726 |     33.333 |   0.9910 |     33.843 |     1.4
+    8 |   0.9237 |     31.693 |   0.9595 |     32.974 |     1.6
+    9 |   0.8938 |     30.630 |   0.9584 |     32.224 |     1.8
+   10 |   0.8682 |     30.057 |   0.9126 |     30.875 |     2.0
+   11 |   0.8332 |     28.637 |   0.8918 |     30.006 |     2.2
+   12 |   0.8015 |     27.442 |   0.8779 |     29.736 |     2.4
+   13 |   0.7654 |     26.533 |   0.8829 |     29.227 |     2.6
+   14 |   0.7567 |     25.691 |   0.8415 |     27.968 |     2.8
+   15 |   0.7173 |     24.617 |   0.8669 |     28.147 |     3.0
+   16 |   0.6834 |     23.698 |   0.8726 |     29.317 |     3.2
+   17 |   0.6823 |     23.378 |   0.8684 |     27.938 |     3.4
+   18 |   0.6463 |     22.327 |   0.8515 |     27.548 |     3.6
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 552,674
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.6721 |     64.976 |   1.8615 |     44.005 |     0.1
+    2 |   1.7688 |     45.452 |   1.5438 |     43.765 |     0.2
+    3 |   1.5558 |     44.131 |   1.4342 |     42.746 |     0.3
+    4 |   1.4507 |     42.798 |   1.3575 |     41.157 |     0.4
+    5 |   1.3740 |     41.372 |   1.3002 |     39.958 |     0.5
+    6 |   1.3100 |     40.040 |   1.2485 |     38.939 |     0.6
+    7 |   1.2593 |     38.663 |   1.2047 |     37.710 |     0.7
+    8 |   1.2070 |     37.391 |   1.1721 |     37.080 |     0.8
+    9 |   1.1606 |     35.866 |   1.1400 |     36.181 |     0.9
+   10 |   1.1194 |     34.671 |   1.1133 |     35.102 |     1.1
+   11 |   1.0843 |     33.460 |   1.0874 |     34.592 |     1.2
+   12 |   1.0465 |     32.601 |   1.0565 |     33.723 |     1.3
+   13 |   1.0159 |     31.445 |   1.0347 |     32.464 |     1.4
+   14 |   0.9855 |     30.580 |   1.0301 |     33.004 |     1.5
+   15 |   0.9557 |     29.661 |   1.0131 |     32.554 |     1.6
+   16 |   0.9295 |     28.918 |   1.0061 |     32.554 |     1.7
+   17 |   0.9002 |     28.262 |   0.9860 |     31.595 |     1.8
+   18 |   0.8699 |     27.249 |   0.9722 |     31.415 |     1.9
+   19 |   0.8491 |     26.550 |   0.9644 |     30.486 |     2.0
+   20 |   0.8186 |     25.195 |   0.9564 |     30.815 |     2.1
+   21 |   0.8011 |     25.262 |   0.9585 |     30.426 |     2.2
+   22 |   0.7770 |     24.447 |   0.9632 |     31.175 |     2.3
+   23 |   0.7607 |     23.775 |   0.9461 |     29.976 |     2.4
+   24 |   0.7336 |     22.899 |   0.9280 |     29.976 |     2.5
+   25 |   0.7175 |     22.365 |   0.9403 |     30.006 |     2.6
+   26 |   0.6898 |     21.523 |   0.9339 |     28.867 |     2.7
+   27 |   0.6793 |     21.402 |   0.9327 |     28.987 |     2.9
+   28 |   0.6685 |     20.994 |   0.9563 |     29.017 |     3.0
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 4
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 535,906
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5950 |     47.082 |   1.2739 |     41.757 |     0.1
+    2 |   1.2096 |     40.210 |   1.1503 |     38.969 |     0.3
+    3 |   1.0920 |     36.571 |   1.0734 |     37.050 |     0.4
+    4 |   0.9977 |     33.702 |   1.0136 |     33.273 |     0.6
+    5 |   0.9273 |     31.423 |   0.9734 |     33.423 |     0.7
+    6 |   0.8751 |     29.441 |   0.9455 |     31.565 |     0.9
+    7 |   0.8190 |     27.827 |   0.9210 |     30.606 |     1.0
+    8 |   0.7799 |     26.401 |   0.8864 |     29.317 |     1.2
+    9 |   0.7194 |     24.298 |   0.8701 |     28.927 |     1.3
+   10 |   0.6846 |     23.450 |   0.8488 |     28.177 |     1.5
+   11 |   0.6489 |     22.002 |   0.8228 |     26.888 |     1.6
+   12 |   0.6181 |     21.093 |   0.8183 |     26.499 |     1.8
+   13 |   0.5904 |     19.871 |   0.8008 |     26.019 |     1.9
+   14 |   0.5574 |     19.106 |   0.8217 |     26.259 |     2.1
+   15 |   0.5270 |     17.928 |   0.8144 |     26.019 |     2.2
+   16 |   0.4939 |     16.826 |   0.8124 |     25.869 |     2.4
+   17 |   0.4794 |     16.535 |   0.8250 |     25.929 |     2.5
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 535,906
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.4823 |     59.057 |   1.7800 |     45.594 |     0.1
+    2 |   1.6072 |     44.290 |   1.4996 |     41.936 |     0.2
+    3 |   1.4299 |     41.758 |   1.3809 |     41.037 |     0.3
+    4 |   1.3196 |     39.274 |   1.3031 |     38.519 |     0.4
+    5 |   1.2349 |     36.819 |   1.2390 |     37.140 |     0.5
+    6 |   1.1604 |     35.156 |   1.1895 |     35.372 |     0.6
+    7 |   1.0962 |     33.289 |   1.1563 |     34.592 |     0.8
+    8 |   1.0422 |     31.808 |   1.1082 |     34.053 |     0.9
+    9 |   0.9918 |     30.184 |   1.0724 |     32.824 |     1.0
+   10 |   0.9464 |     28.907 |   1.0398 |     32.074 |     1.1
+   11 |   0.8941 |     27.216 |   1.0280 |     31.894 |     1.2
+   12 |   0.8546 |     25.796 |   0.9994 |     31.055 |     1.3
+   13 |   0.8197 |     24.661 |   0.9789 |     30.576 |     1.4
+   14 |   0.7805 |     23.378 |   0.9771 |     30.336 |     1.5
+   15 |   0.7474 |     22.437 |   0.9565 |     29.197 |     1.6
+   16 |   0.7108 |     21.490 |   0.9447 |     28.237 |     1.7
+   17 |   0.6854 |     20.802 |   0.9370 |     28.267 |     1.8
+   18 |   0.6540 |     19.469 |   0.9191 |     28.147 |     2.0
+   19 |   0.6238 |     18.643 |   0.9249 |     28.237 |     2.1
+   20 |   0.5993 |     17.724 |   0.9224 |     28.237 |     2.2
+   21 |   0.5759 |     17.382 |   0.9160 |     27.368 |     2.3
+   22 |   0.5405 |     15.813 |   0.9199 |     27.668 |     2.4
+   23 |   0.5254 |     15.582 |   0.9357 |     27.278 |     2.5
+   24 |   0.5008 |     14.668 |   0.9163 |     26.709 |     2.6
+   25 |   0.4809 |     14.299 |   0.9108 |     26.619 |     2.7
+   26 |   0.4592 |     13.495 |   0.9364 |     27.038 |     2.8
+   27 |   0.4530 |     13.583 |   0.9372 |     27.458 |     2.9
+   28 |   0.4213 |     12.168 |   0.9473 |     26.589 |     3.0
+   29 |   0.4144 |     12.306 |   0.9209 |     25.839 |     3.2
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,405,858
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5125 |     47.104 |   1.2614 |     41.427 |     0.2
+    2 |   1.2384 |     41.802 |   1.1636 |     39.269 |     0.4
+    3 |   1.1610 |     39.770 |   1.1078 |     37.920 |     0.6
+    4 |   1.0939 |     37.595 |   1.0940 |     38.519 |     0.8
+    5 |   1.0388 |     35.844 |   1.0353 |     35.462 |     1.0
+    6 |   1.0116 |     34.980 |   1.0013 |     34.203 |     1.2
+    7 |   0.9705 |     33.697 |   0.9815 |     34.532 |     1.4
+    8 |   0.9262 |     31.918 |   0.9479 |     32.404 |     1.5
+    9 |   0.9064 |     31.461 |   0.9293 |     32.194 |     1.7
+   10 |   0.8718 |     30.415 |   0.9037 |     30.186 |     1.9
+   11 |   0.8432 |     29.413 |   0.9048 |     30.845 |     2.1
+   12 |   0.8150 |     28.323 |   0.8881 |     30.126 |     2.3
+   13 |   0.7906 |     27.249 |   0.8886 |     29.376 |     2.5
+   14 |   0.7613 |     26.407 |   0.8839 |     29.017 |     2.7
+   15 |   0.7385 |     25.641 |   0.8339 |     28.147 |     2.9
+   16 |   0.6976 |     23.775 |   0.8368 |     27.578 |     3.1
+   17 |   0.6782 |     23.593 |   0.8369 |     28.597 |     3.3
+   18 |   0.6492 |     21.897 |   0.8201 |     26.709 |     3.5
+   19 |   0.6282 |     21.611 |   0.8099 |     26.379 |     3.7
+   20 |   0.6164 |     21.220 |   0.8128 |     25.180 |     3.9
+   21 |   0.5875 |     20.295 |   0.8312 |     26.229 |     4.1
+   22 |   0.5549 |     18.869 |   0.8051 |     25.240 |     4.3
+   23 |   0.5382 |     18.396 |   0.8202 |     25.540 |     4.5
+   24 |   0.5079 |     17.322 |   0.8162 |     25.300 |     4.6
+   25 |   0.5073 |     17.371 |   0.8122 |     24.700 |     4.8
+   26 |   0.4778 |     16.733 |   0.8139 |     24.730 |     5.0
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 437,090
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.7312 |     49.339 |   1.3028 |     41.876 |     0.1
+    2 |   1.2856 |     42.071 |   1.1984 |     39.418 |     0.2
+    3 |   1.1825 |     38.740 |   1.1105 |     37.770 |     0.3
+    4 |   1.1023 |     36.896 |   1.0661 |     34.952 |     0.4
+    5 |   1.0484 |     35.128 |   1.0282 |     33.753 |     0.5
+    6 |   0.9864 |     32.832 |   0.9918 |     32.824 |     0.6
+    7 |   0.9420 |     31.770 |   0.9636 |     31.685 |     0.7
+    8 |   0.9124 |     30.845 |   0.9550 |     30.606 |     0.8
+    9 |   0.8566 |     28.615 |   0.9368 |     30.186 |     0.9
+   10 |   0.8241 |     27.624 |   0.9103 |     30.546 |     1.0
+   11 |   0.7812 |     26.010 |   0.8978 |     29.047 |     1.1
+   12 |   0.7615 |     25.537 |   0.8884 |     28.747 |     1.2
+   13 |   0.7239 |     24.326 |   0.9009 |     29.856 |     1.3
+   14 |   0.6951 |     23.180 |   0.8888 |     27.998 |     1.4
+   15 |   0.6636 |     22.096 |   0.8929 |     28.267 |     1.5
+   16 |   0.6386 |     21.556 |   0.8714 |     27.458 |     1.6
+   17 |   0.6093 |     20.350 |   0.9138 |     28.837 |     1.7
+   18 |   0.5950 |     20.003 |   0.8490 |     26.918 |     1.8
+   19 |   0.5613 |     19.376 |   0.9028 |     28.028 |     1.9
+   20 |   0.5507 |     18.649 |   0.8803 |     27.308 |     2.0
+   21 |   0.5346 |     18.291 |   0.9018 |     27.488 |     2.1
+   22 |   0.5095 |     17.333 |   0.8699 |     26.289 |     2.2
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,241,890
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.1494 |     56.189 |   1.4948 |     43.345 |     0.1
+    2 |   1.3715 |     41.477 |   1.2977 |     39.359 |     0.2
+    3 |   1.2174 |     37.534 |   1.2007 |     35.701 |     0.4
+    4 |   1.1153 |     34.726 |   1.1275 |     35.012 |     0.5
+    5 |   1.0286 |     31.687 |   1.0596 |     32.644 |     0.6
+    6 |   0.9485 |     29.055 |   1.0219 |     32.014 |     0.7
+    7 |   0.8789 |     27.045 |   0.9756 |     30.396 |     0.9
+    8 |   0.8131 |     24.937 |   0.9448 |     28.807 |     1.0
+    9 |   0.7594 |     23.301 |   0.9265 |     28.058 |     1.1
+   10 |   0.7079 |     21.578 |   0.9026 |     27.998 |     1.2
+   11 |   0.6615 |     20.069 |   0.9070 |     27.788 |     1.4
+   12 |   0.6154 |     18.588 |   0.8842 |     27.218 |     1.5
+   13 |   0.5864 |     17.950 |   0.8708 |     26.019 |     1.6
+   14 |   0.5393 |     16.320 |   0.8775 |     26.469 |     1.7
+   15 |   0.5065 |     15.373 |   0.8702 |     25.540 |     1.9
+   16 |   0.4765 |     14.530 |   0.8553 |     24.880 |     2.0
+   17 |   0.4502 |     13.517 |   0.8764 |     25.480 |     2.1
+   18 |   0.4188 |     12.658 |   0.8837 |     26.079 |     2.2
+   19 |   0.3942 |     11.932 |   0.8829 |     25.779 |     2.4
+   20 |   0.3722 |     11.348 |   0.9098 |     26.199 |     2.5
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,241,890
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.4991 |     46.327 |   1.2256 |     40.138 |     0.1
+    2 |   1.1615 |     39.159 |   1.1272 |     38.309 |     0.3
+    3 |   1.0654 |     36.444 |   1.0634 |     36.511 |     0.5
+    4 |   0.9886 |     33.521 |   0.9859 |     32.884 |     0.6
+    5 |   0.9259 |     31.676 |   0.9561 |     32.224 |     0.8
+    6 |   0.8581 |     29.039 |   0.9261 |     31.415 |     0.9
+    7 |   0.8136 |     27.552 |   0.9254 |     31.085 |     1.1
+    8 |   0.7690 |     25.955 |   0.8753 |     29.287 |     1.2
+    9 |   0.7308 |     24.821 |   0.8696 |     28.747 |     1.4
+   10 |   0.6891 |     23.384 |   0.8423 |     27.248 |     1.5
+   11 |   0.6456 |     21.765 |   0.8133 |     26.469 |     1.7
+   12 |   0.6130 |     20.873 |   0.8110 |     26.199 |     1.8
+   13 |   0.5855 |     20.146 |   0.8360 |     27.578 |     2.0
+   14 |   0.5594 |     19.111 |   0.8398 |     26.859 |     2.1
+   15 |   0.5352 |     18.236 |   0.8292 |     26.499 |     2.3
+   16 |   0.5058 |     17.074 |   0.8309 |     25.749 |     2.4
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,241,890
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5843 |     48.051 |   1.2931 |     42.146 |     0.1
+    2 |   1.2436 |     41.047 |   1.1979 |     40.138 |     0.3
+    3 |   1.1733 |     39.236 |   1.1252 |     37.770 |     0.4
+    4 |   1.0963 |     36.852 |   1.0796 |     37.830 |     0.5
+    5 |   1.0346 |     35.057 |   1.0735 |     36.211 |     0.7
+    6 |   0.9936 |     33.581 |   1.0140 |     34.173 |     0.8
+    7 |   0.9468 |     31.841 |   0.9906 |     33.363 |     0.9
+    8 |   0.8963 |     30.333 |   0.9760 |     31.415 |     1.0
+    9 |   0.8674 |     29.341 |   0.9651 |     32.704 |     1.2
+   10 |   0.8186 |     27.811 |   0.9421 |     31.805 |     1.3
+   11 |   0.7901 |     26.649 |   0.9197 |     30.336 |     1.4
+   12 |   0.7580 |     25.845 |   0.9053 |     29.526 |     1.6
+   13 |   0.7348 |     24.832 |   0.9232 |     30.456 |     1.7
+   14 |   0.7045 |     23.869 |   0.9500 |     30.456 |     1.8
+   15 |   0.6728 |     22.988 |   0.9390 |     30.456 |     2.0
+   16 |   0.6403 |     21.804 |   0.9250 |     29.107 |     2.1
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,341,474
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.6181 |     48.651 |   1.2871 |     42.986 |     0.2
+    2 |   1.2679 |     42.192 |   1.2150 |     41.247 |     0.3
+    3 |   1.1932 |     40.177 |   1.1752 |     39.209 |     0.5
+    4 |   1.1335 |     38.388 |   1.0894 |     36.841 |     0.6
+    5 |   1.0872 |     36.626 |   1.0661 |     36.181 |     0.8
+    6 |   1.0471 |     35.905 |   1.0217 |     35.222 |     0.9
+    7 |   1.0057 |     34.484 |   1.0104 |     35.162 |     1.1
+    8 |   0.9712 |     33.565 |   0.9726 |     32.494 |     1.3
+    9 |   0.9398 |     32.364 |   0.9549 |     33.363 |     1.4
+   10 |   0.9117 |     31.494 |   0.9294 |     31.115 |     1.6
+   11 |   0.8712 |     29.975 |   0.9429 |     33.303 |     1.7
+   12 |   0.8450 |     28.835 |   0.9136 |     31.115 |     1.9
+   13 |   0.8148 |     28.070 |   0.8907 |     30.156 |     2.1
+   14 |   0.7824 |     27.172 |   0.8957 |     29.556 |     2.2
+   15 |   0.7622 |     26.258 |   0.8799 |     28.897 |     2.4
+   16 |   0.7350 |     25.454 |   0.8563 |     27.998 |     2.5
+   17 |   0.7042 |     24.001 |   0.8506 |     28.237 |     2.7
+   18 |   0.6756 |     23.103 |   0.8515 |     28.297 |     2.8
+   19 |   0.6516 |     22.255 |   0.8405 |     27.728 |     3.0
+   20 |   0.6327 |     21.639 |   0.8620 |     28.118 |     3.2
+   21 |   0.6036 |     20.868 |   0.8620 |     27.488 |     3.3
+   22 |   0.5844 |     20.080 |   0.8065 |     25.929 |     3.5
+   23 |   0.5649 |     19.051 |   0.8521 |     27.518 |     3.6
+   24 |   0.5453 |     18.676 |   0.8745 |     27.488 |     3.8
+   25 |   0.5285 |     18.318 |   0.8597 |     26.739 |     4.0
+   26 |   0.5045 |     17.515 |   0.8694 |     25.809 |     4.1
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 3
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,076,002
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.4919 |     45.909 |   1.2212 |     40.498 |     0.1
+    2 |   1.1538 |     38.982 |   1.1255 |     38.729 |     0.2
+    3 |   1.0524 |     35.525 |   1.0537 |     35.761 |     0.3
+    4 |   0.9616 |     32.436 |   0.9833 |     32.854 |     0.5
+    5 |   0.8942 |     30.421 |   0.9706 |     33.453 |     0.6
+    6 |   0.8343 |     28.218 |   0.9321 |     31.835 |     0.7
+    7 |   0.7937 |     26.759 |   0.9270 |     30.456 |     0.8
+    8 |   0.7502 |     25.284 |   0.8759 |     29.227 |     0.9
+    9 |   0.6948 |     23.780 |   0.8460 |     27.668 |     1.0
+   10 |   0.6675 |     22.646 |   0.9009 |     29.796 |     1.2
+   11 |   0.6353 |     21.941 |   0.8634 |     26.649 |     1.3
+   12 |   0.6036 |     20.857 |   0.8179 |     26.709 |     1.4
+   13 |   0.5803 |     19.822 |   0.8616 |     27.758 |     1.5
+   14 |   0.5622 |     19.425 |   0.8406 |     28.687 |     1.6
+   15 |   0.5496 |     18.726 |   0.8168 |     25.959 |     1.7
+   16 |   0.5062 |     17.410 |   0.8344 |     25.719 |     1.8
+   17 |   0.4754 |     16.612 |   0.8026 |     24.550 |     2.0
+   18 |   0.4510 |     15.543 |   0.8680 |     26.619 |     2.1
+   19 |   0.4611 |     15.989 |   0.8514 |     25.899 |     2.2
+   20 |   0.4290 |     14.855 |   0.8562 |     25.959 |     2.3
+   21 |   0.4034 |     14.013 |   0.8727 |     24.670 |     2.4
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 3
+Attention heads: 4
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,273,378
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.4723 |     45.568 |   1.1924 |     39.718 |     0.1
+    2 |   1.1327 |     38.102 |   1.1077 |     37.650 |     0.3
+    3 |   1.0305 |     34.770 |   1.0185 |     34.772 |     0.4
+    4 |   0.9489 |     32.001 |   1.0128 |     34.772 |     0.6
+    5 |   0.8955 |     30.443 |   0.9318 |     32.044 |     0.7
+    6 |   0.8229 |     27.937 |   0.9210 |     31.655 |     0.9
+    7 |   0.7811 |     26.616 |   0.8896 |     29.916 |     1.0
+    8 |   0.7409 |     25.344 |   0.8532 |     27.968 |     1.2
+    9 |   0.6860 |     23.588 |   0.8549 |     27.908 |     1.3
+   10 |   0.6656 |     22.569 |   0.8269 |     27.488 |     1.5
+   11 |   0.6159 |     21.044 |   0.8138 |     26.349 |     1.6
+   12 |   0.5904 |     20.069 |   0.7924 |     25.540 |     1.7
+   13 |   0.5524 |     18.803 |   0.8086 |     25.869 |     1.9
+   14 |   0.5244 |     18.032 |   0.8219 |     26.019 |     2.0
+   15 |   0.4932 |     16.749 |   0.8343 |     26.169 |     2.2
+   16 |   0.4684 |     15.989 |   0.8034 |     24.940 |     2.3
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,175,586
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.4939 |     45.893 |   1.2466 |     43.615 |     0.1
+    2 |   1.1724 |     39.368 |   1.1304 |     38.339 |     0.3
+    3 |   1.0583 |     36.092 |   1.0766 |     36.271 |     0.4
+    4 |   0.9857 |     33.801 |   0.9888 |     34.053 |     0.6
+    5 |   0.9266 |     31.610 |   0.9816 |     33.034 |     0.7
+    6 |   0.8828 |     30.162 |   0.9629 |     32.614 |     0.8
+    7 |   0.8255 |     28.521 |   0.9293 |     31.655 |     1.0
+    8 |   0.7934 |     27.266 |   0.9210 |     29.916 |     1.1
+    9 |   0.7585 |     25.674 |   0.8764 |     29.317 |     1.3
+   10 |   0.7236 |     25.140 |   0.9077 |     29.616 |     1.4
+   11 |   0.6975 |     23.676 |   0.8426 |     28.177 |     1.5
+   12 |   0.6685 |     22.811 |   0.8506 |     27.968 |     1.7
+   13 |   0.6426 |     22.024 |   0.8330 |     27.038 |     1.8
+   14 |   0.6210 |     21.082 |   0.8409 |     26.859 |     2.0
+   15 |   0.5801 |     19.937 |   0.8002 |     26.379 |     2.1
+   16 |   0.5684 |     19.706 |   0.8166 |     26.529 |     2.3
+   17 |   0.5516 |     19.001 |   0.8186 |     25.809 |     2.4
+   18 |   0.5442 |     19.144 |   0.8184 |     26.259 |     2.5
+   19 |   0.5124 |     17.911 |   0.8282 |     27.098 |     2.7
+   20 |   0.5075 |     17.674 |   0.7938 |     24.700 |     2.8
+   21 |   0.4715 |     16.579 |   0.8074 |     25.240 |     3.0
+   22 |   0.4579 |     15.736 |   0.8684 |     27.488 |     3.1
+   23 |   0.4609 |     16.006 |   0.8078 |     25.030 |     3.2
+   24 |   0.4418 |     15.230 |   0.8225 |     24.371 |     3.4
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 420,322
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.6389 |     47.693 |   1.3086 |     42.986 |     0.1
+    2 |   1.2213 |     40.287 |   1.1701 |     39.239 |     0.2
+    3 |   1.0933 |     36.720 |   1.0737 |     35.462 |     0.3
+    4 |   1.0060 |     33.548 |   1.0025 |     33.933 |     0.4
+    5 |   0.9335 |     31.615 |   0.9779 |     32.794 |     0.5
+    6 |   0.8696 |     29.171 |   0.9609 |     32.734 |     0.6
+    7 |   0.8209 |     27.519 |   0.9231 |     30.456 |     0.7
+    8 |   0.7839 |     26.335 |   0.8862 |     29.167 |     0.8
+    9 |   0.7384 |     25.206 |   0.8824 |     28.897 |     0.9
+   10 |   0.7074 |     24.094 |   0.8648 |     28.567 |     1.1
+   11 |   0.6679 |     22.685 |   0.8438 |     27.338 |     1.2
+   12 |   0.6203 |     20.868 |   0.8593 |     27.368 |     1.3
+   13 |   0.6000 |     20.157 |   0.8647 |     27.698 |     1.4
+   14 |   0.5770 |     19.948 |   0.8118 |     26.349 |     1.5
+   15 |   0.5484 |     18.748 |   0.7976 |     25.600 |     1.6
+   16 |   0.5114 |     17.206 |   0.8023 |     25.749 |     1.7
+   17 |   0.5025 |     17.377 |   0.8191 |     25.899 |     1.8
+   18 |   0.4838 |     16.342 |   0.7893 |     24.790 |     1.9
+   19 |   0.4599 |     15.918 |   0.8027 |     24.640 |     2.0
+   20 |   0.4255 |     14.729 |   0.8211 |     24.520 |     2.1
+   21 |   0.4059 |     13.782 |   0.8326 |     24.820 |     2.2
+   22 |   0.3937 |     13.302 |   0.8419 |     24.490 |     2.3
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,472,162
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.4745 |     45.705 |   1.2429 |     41.427 |     0.2
+    2 |   1.1611 |     39.038 |   1.1068 |     37.620 |     0.3
+    3 |   1.0433 |     35.266 |   1.0414 |     34.862 |     0.5
+    4 |   0.9711 |     32.684 |   1.0036 |     33.723 |     0.6
+    5 |   0.9049 |     30.289 |   0.9522 |     32.314 |     0.8
+    6 |   0.8345 |     28.422 |   0.9208 |     30.725 |     0.9
+    7 |   0.7937 |     26.660 |   0.9341 |     32.074 |     1.1
+    8 |   0.7525 |     25.228 |   0.8696 |     29.616 |     1.2
+    9 |   0.7127 |     24.226 |   0.8907 |     30.066 |     1.4
+   10 |   0.6760 |     23.246 |   0.8254 |     28.028 |     1.5
+   11 |   0.6329 |     21.567 |   0.8565 |     27.338 |     1.7
+   12 |   0.6098 |     20.895 |   0.8091 |     25.809 |     1.9
+   13 |   0.5751 |     19.689 |   0.8570 |     28.177 |     2.0
+   14 |   0.5467 |     18.858 |   0.8669 |     28.177 |     2.2
+   15 |   0.5277 |     18.186 |   0.8355 |     26.469 |     2.3
+   16 |   0.4936 |     16.755 |   0.8582 |     26.109 |     2.5
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 535,906
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.4320 |     59.112 |   1.7501 |     44.544 |     0.1
+    2 |   1.6027 |     43.767 |   1.5023 |     42.626 |     0.2
+    3 |   1.4318 |     41.251 |   1.3817 |     40.378 |     0.3
+    4 |   1.3173 |     38.955 |   1.2894 |     38.609 |     0.4
+    5 |   1.2283 |     36.631 |   1.2333 |     37.500 |     0.5
+    6 |   1.1526 |     34.638 |   1.1869 |     36.061 |     0.7
+    7 |   1.0865 |     32.667 |   1.1270 |     34.233 |     0.8
+    8 |   1.0217 |     30.305 |   1.0962 |     33.483 |     0.9
+    9 |   0.9692 |     29.033 |   1.0539 |     31.924 |     1.0
+   10 |   0.9151 |     27.222 |   1.0335 |     31.745 |     1.1
+   11 |   0.8733 |     26.407 |   1.0083 |     30.486 |     1.2
+   12 |   0.8256 |     24.827 |   0.9803 |     29.856 |     1.3
+   13 |   0.7827 |     23.356 |   0.9701 |     29.526 |     1.4
+   14 |   0.7521 |     22.332 |   0.9550 |     28.807 |     1.5
+   15 |   0.7089 |     21.176 |   0.9367 |     28.807 |     1.6
+   16 |   0.6750 |     19.904 |   0.9162 |     28.297 |     1.7
+   17 |   0.6446 |     19.288 |   0.9353 |     28.327 |     1.9
+   18 |   0.6126 |     18.324 |   0.9116 |     27.698 |     2.0
+   19 |   0.5776 |     16.887 |   0.9209 |     27.548 |     2.1
+   20 |   0.5559 |     16.501 |   0.9011 |     27.638 |     2.2
+   21 |   0.5354 |     15.852 |   0.9079 |     27.428 |     2.3
+   22 |   0.5065 |     14.899 |   0.9201 |     26.918 |     2.4
+   23 |   0.4809 |     14.288 |   0.9117 |     26.649 |     2.5
+   24 |   0.4670 |     13.787 |   0.9259 |     26.888 |     2.6
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 470,562
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.7588 |     49.356 |   1.3315 |     42.656 |     0.1
+    2 |   1.2984 |     42.550 |   1.2107 |     39.718 |     0.2
+    3 |   1.2037 |     39.946 |   1.1461 |     38.669 |     0.4
+    4 |   1.1355 |     37.909 |   1.0790 |     37.320 |     0.5
+    5 |   1.0730 |     36.285 |   1.0624 |     34.892 |     0.6
+    6 |   1.0223 |     34.484 |   1.0265 |     35.312 |     0.7
+    7 |   0.9785 |     32.618 |   0.9623 |     32.344 |     0.8
+    8 |   0.9338 |     31.131 |   0.9652 |     32.104 |     1.0
+    9 |   0.8972 |     30.046 |   0.9291 |     30.725 |     1.1
+   10 |   0.8688 |     29.154 |   0.9182 |     30.815 |     1.2
+   11 |   0.8302 |     27.976 |   0.9205 |     31.145 |     1.3
+   12 |   0.8069 |     27.299 |   0.9091 |     30.216 |     1.4
+   13 |   0.7658 |     25.752 |   0.9005 |     30.246 |     1.6
+   14 |   0.7493 |     25.140 |   0.8789 |     29.376 |     1.7
+   15 |   0.7204 |     24.353 |   0.8774 |     28.177 |     1.8
+   16 |   0.7106 |     24.303 |   0.8693 |     27.938 |     1.9
+   17 |   0.6710 |     22.514 |   0.8461 |     27.158 |     2.0
+   18 |   0.6406 |     21.512 |   0.8502 |     27.848 |     2.2
+   19 |   0.6248 |     21.352 |   0.8552 |     27.008 |     2.3
+   20 |   0.6074 |     20.785 |   0.8736 |     28.118 |     2.4
+   21 |   0.5863 |     19.838 |   0.8762 |     27.518 |     2.5
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 3
+Attention heads: 4
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 485,922
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5537 |     45.496 |   1.2534 |     40.468 |     0.1
+    2 |   1.1822 |     38.762 |   1.1338 |     37.170 |     0.2
+    3 |   1.0499 |     34.847 |   1.0387 |     33.813 |     0.4
+    4 |   0.9511 |     31.715 |   0.9729 |     31.595 |     0.5
+    5 |   0.8759 |     29.397 |   0.9210 |     30.036 |     0.6
+    6 |   0.8068 |     27.244 |   0.8880 |     30.246 |     0.7
+    7 |   0.7416 |     24.953 |   0.8903 |     31.025 |     0.8
+    8 |   0.6868 |     23.186 |   0.8406 |     28.207 |     1.0
+    9 |   0.6364 |     21.550 |   0.8636 |     27.968 |     1.1
+   10 |   0.6176 |     20.956 |   0.8232 |     26.948 |     1.2
+   11 |   0.5662 |     19.304 |   0.8215 |     26.349 |     1.3
+   12 |   0.5295 |     17.906 |   0.7869 |     25.060 |     1.5
+   13 |   0.4991 |     16.920 |   0.7938 |     24.970 |     1.6
+   14 |   0.4716 |     15.995 |   0.8025 |     24.670 |     1.7
+   15 |   0.4499 |     15.246 |   0.8186 |     25.450 |     1.8
+   16 |   0.4193 |     14.194 |   0.7713 |     23.831 |     1.9
+   17 |   0.3998 |     13.815 |   0.8006 |     23.501 |     2.1
+   18 |   0.3694 |     12.691 |   0.7997 |     23.741 |     2.2
+   19 |   0.3500 |     12.179 |   0.8447 |     24.191 |     2.3
+   20 |   0.3396 |     11.535 |   0.8401 |     24.221 |     2.4
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,472,162
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5357 |     47.313 |   1.3042 |     43.375 |     0.1
+    2 |   1.1870 |     39.985 |   1.1616 |     39.928 |     0.3
+    3 |   1.0740 |     36.285 |   1.0787 |     36.121 |     0.4
+    4 |   1.0002 |     33.972 |   1.0028 |     33.303 |     0.5
+    5 |   0.9270 |     31.395 |   0.9781 |     32.524 |     0.6
+    6 |   0.8715 |     29.639 |   0.9601 |     32.194 |     0.8
+    7 |   0.8195 |     27.965 |   0.9053 |     30.875 |     0.9
+    8 |   0.7758 |     26.467 |   0.9055 |     29.496 |     1.0
+    9 |   0.7261 |     24.634 |   0.8495 |     28.028 |     1.1
+   10 |   0.6775 |     22.916 |   0.8536 |     28.147 |     1.3
+   11 |   0.6445 |     21.864 |   0.8767 |     27.998 |     1.4
+   12 |   0.6137 |     20.802 |   0.8273 |     26.948 |     1.5
+   13 |   0.5912 |     20.356 |   0.8369 |     26.589 |     1.7
+   14 |   0.5633 |     19.513 |   0.8267 |     25.929 |     1.8
+   15 |   0.5196 |     17.724 |   0.8442 |     25.779 |     1.9
+   16 |   0.4970 |     17.179 |   0.8585 |     26.409 |     2.0
+   17 |   0.4738 |     16.342 |   0.8343 |     25.869 |     2.2
+   18 |   0.4348 |     15.081 |   0.8362 |     24.670 |     2.3
+   19 |   0.4075 |     13.859 |   0.8170 |     23.681 |     2.4
+   20 |   0.4115 |     14.371 |   0.8743 |     25.570 |     2.6
+   21 |   0.3888 |     13.468 |   0.7992 |     23.261 |     2.7
+   22 |   0.3692 |     12.702 |   0.8503 |     24.790 |     2.8
+   23 |   0.3587 |     12.598 |   0.8501 |     24.311 |     2.9
+   24 |   0.3276 |     11.271 |   0.8610 |     24.670 |     3.1
+   25 |   0.3131 |     10.973 |   0.8996 |     24.550 |     3.2
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,472,162
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5714 |     47.704 |   1.2519 |     41.277 |     0.1
+    2 |   1.2311 |     41.102 |   1.1762 |     39.748 |     0.3
+    3 |   1.1466 |     38.437 |   1.0945 |     35.701 |     0.4
+    4 |   1.0749 |     36.136 |   1.0623 |     36.421 |     0.5
+    5 |   1.0120 |     34.594 |   1.0095 |     34.442 |     0.7
+    6 |   0.9727 |     32.612 |   0.9870 |     33.243 |     0.8
+    7 |   0.9208 |     31.197 |   0.9485 |     31.894 |     1.0
+    8 |   0.8832 |     29.964 |   0.9566 |     31.355 |     1.1
+    9 |   0.8388 |     28.554 |   0.9054 |     29.406 |     1.2
+   10 |   0.7988 |     27.332 |   0.8963 |     29.317 |     1.4
+   11 |   0.7660 |     25.983 |   0.8599 |     27.878 |     1.5
+   12 |   0.7271 |     24.507 |   0.8671 |     28.297 |     1.6
+   13 |   0.6900 |     23.489 |   0.8636 |     27.638 |     1.8
+   14 |   0.6532 |     22.123 |   0.8482 |     27.728 |     1.9
+   15 |   0.6400 |     21.809 |   0.8543 |     27.818 |     2.0
+   16 |   0.6058 |     20.537 |   0.8544 |     27.158 |     2.2
+   17 |   0.5654 |     19.034 |   0.8886 |     27.848 |     2.3
+   18 |   0.5558 |     19.089 |   0.8498 |     27.008 |     2.5
+   19 |   0.5318 |     18.203 |   0.8314 |     25.899 |     2.6
+   20 |   0.4982 |     17.025 |   0.8401 |     25.989 |     2.7
+   21 |   0.4744 |     16.441 |   0.8402 |     25.420 |     2.9
+   22 |   0.4546 |     15.824 |   0.8603 |     24.940 |     3.0
+   23 |   0.4499 |     15.406 |   0.8933 |     25.600 |     3.1
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 3
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 437,090
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.6916 |     48.007 |   1.3050 |     42.836 |     0.1
+    2 |   1.2055 |     39.142 |   1.1452 |     36.990 |     0.2
+    3 |   1.0709 |     35.492 |   1.0350 |     33.543 |     0.3
+    4 |   0.9665 |     31.973 |   0.9963 |     32.494 |     0.4
+    5 |   0.8927 |     29.507 |   0.9546 |     31.265 |     0.5
+    6 |   0.8305 |     27.613 |   0.9140 |     30.066 |     0.6
+    7 |   0.7699 |     25.988 |   0.8975 |     29.317 |     0.7
+    8 |   0.7210 |     23.973 |   0.9095 |     29.017 |     0.8
+    9 |   0.6795 |     22.547 |   0.8666 |     28.387 |     0.9
+   10 |   0.6404 |     21.270 |   0.8409 |     27.488 |     0.9
+   11 |   0.5988 |     20.191 |   0.8504 |     27.548 |     1.0
+   12 |   0.5601 |     18.875 |   0.8292 |     26.948 |     1.1
+   13 |   0.5427 |     18.307 |   0.8368 |     26.918 |     1.2
+   14 |   0.5089 |     17.140 |   0.8642 |     26.918 |     1.3
+   15 |   0.4810 |     16.221 |   0.8387 |     26.019 |     1.4
+   16 |   0.4563 |     15.307 |   0.8424 |     25.150 |     1.5
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 4
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 1,341,474
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 1e-05
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.5670 |     48.117 |   1.2217 |     41.577 |     0.2
+    2 |   1.1666 |     39.225 |   1.0980 |     36.511 |     0.4
+    3 |   1.0648 |     36.147 |   1.0505 |     34.802 |     0.5
+    4 |   0.9809 |     33.174 |   1.0092 |     34.532 |     0.7
+    5 |   0.9290 |     31.456 |   1.0020 |     33.783 |     0.9
+    6 |   0.8774 |     30.266 |   0.9463 |     31.445 |     1.1
+    7 |   0.8328 |     28.328 |   0.9213 |     31.745 |     1.3
+    8 |   0.7895 |     26.869 |   0.9385 |     32.194 |     1.5
+    9 |   0.7798 |     26.743 |   0.9215 |     30.516 |     1.6
+   10 |   0.7414 |     25.394 |   0.8674 |     28.537 |     1.8
+   11 |   0.7092 |     24.182 |   0.8515 |     28.597 |     2.0
+   12 |   0.6710 |     22.817 |   0.8287 |     27.998 |     2.2
+   13 |   0.6507 |     22.387 |   0.8682 |     28.507 |     2.4
+   14 |   0.6372 |     21.798 |   0.8123 |     26.529 |     2.6
+   15 |   0.5954 |     20.614 |   0.8438 |     27.398 |     2.7
+   16 |   0.5913 |     20.692 |   0.8101 |     26.589 |     2.9
+   17 |   0.5673 |     19.778 |   0.8207 |     25.959 |     3.1
+   18 |   0.5576 |     19.519 |   0.8195 |     26.409 |     3.3
+   19 |   0.5297 |     18.214 |   0.8169 |     25.689 |     3.5
+   20 |   0.5167 |     17.691 |   0.8296 |     25.570 |     3.7
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 3
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 485,922
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   1.6547 |     48.012 |   1.3023 |     41.966 |     0.1
+    2 |   1.2693 |     41.433 |   1.1947 |     39.299 |     0.2
+    3 |   1.1776 |     38.927 |   1.1401 |     38.249 |     0.3
+    4 |   1.1024 |     36.824 |   1.0664 |     36.631 |     0.4
+    5 |   1.0364 |     34.622 |   1.0149 |     34.263 |     0.5
+    6 |   0.9868 |     33.284 |   0.9815 |     32.884 |     0.6
+    7 |   0.9324 |     31.555 |   0.9624 |     31.835 |     0.7
+    8 |   0.8826 |     29.721 |   0.9182 |     30.606 |     0.8
+    9 |   0.8434 |     28.444 |   0.8935 |     28.927 |     0.9
+   10 |   0.7983 |     26.770 |   0.9019 |     29.047 |     1.0
+   11 |   0.7674 |     25.691 |   0.8874 |     29.376 |     1.1
+   12 |   0.7363 |     24.700 |   0.8529 |     27.638 |     1.2
+   13 |   0.7027 |     23.802 |   0.8493 |     27.698 |     1.3
+   14 |   0.6757 |     22.784 |   0.8474 |     27.038 |     1.4
+   15 |   0.6321 |     21.363 |   0.8635 |     27.428 |     1.5
+   16 |   0.6142 |     20.648 |   0.8558 |     27.008 |     1.6
+   17 |   0.5881 |     19.827 |   0.8268 |     26.109 |     1.6
+   18 |   0.5568 |     18.676 |   0.8629 |     27.668 |     1.7
+   19 |   0.5335 |     18.120 |   0.8859 |     26.859 |     1.8
+   20 |   0.5158 |     17.575 |   0.8723 |     26.529 |     1.9
+   21 |   0.4879 |     16.584 |   0.8744 |     26.769 |     2.0
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 4
+Decoder layers: 3
+Attention heads: 2
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 420,322
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.6964 |     65.775 |   1.9912 |     47.242 |     0.1
+    2 |   1.8716 |     47.098 |   1.5743 |     43.915 |     0.2
+    3 |   1.5979 |     44.725 |   1.4414 |     42.866 |     0.3
+    4 |   1.4776 |     43.613 |   1.3627 |     41.247 |     0.4
+    5 |   1.3943 |     42.060 |   1.3082 |     40.288 |     0.6
+    6 |   1.3331 |     40.965 |   1.2648 |     39.269 |     0.7
+    7 |   1.2781 |     39.274 |   1.2226 |     38.159 |     0.8
+    8 |   1.2323 |     38.068 |   1.1972 |     37.620 |     0.9
+    9 |   1.1956 |     36.896 |   1.1753 |     37.290 |     1.0
+   10 |   1.1575 |     35.668 |   1.1537 |     36.001 |     1.1
+   11 |   1.1242 |     34.715 |   1.1289 |     35.881 |     1.2
+   12 |   1.0926 |     33.702 |   1.1217 |     35.432 |     1.3
+   13 |   1.0621 |     32.931 |   1.1057 |     34.892 |     1.5
+   14 |   1.0347 |     32.386 |   1.0907 |     34.382 |     1.6
+   15 |   1.0069 |     31.406 |   1.0905 |     34.472 |     1.7
+   16 |   0.9836 |     30.878 |   1.0877 |     33.813 |     1.8
+   17 |   0.9601 |     29.947 |   1.0655 |     33.153 |     1.9
+   18 |   0.9320 |     28.951 |   1.0502 |     32.734 |     2.0
+   19 |   0.9095 |     28.196 |   1.0648 |     33.543 |     2.1
+   20 |   0.8862 |     27.767 |   1.0551 |     32.824 |     2.2
+   21 |   0.8668 |     26.930 |   1.0416 |     32.674 |     2.4
+   22 |   0.8443 |     26.352 |   1.0299 |     31.745 |     2.5
+   23 |   0.8213 |     25.796 |   1.0403 |     32.794 |     2.6
+   24 |   0.8022 |     25.184 |   1.0389 |     32.854 |     2.7
+   25 |   0.7844 |     24.474 |   1.0262 |     31.475 |     2.8
+   26 |   0.7668 |     23.951 |   1.0274 |     31.385 |     2.9
+   27 |   0.7478 |     23.445 |   1.0286 |     32.044 |     3.0
+   28 |   0.7308 |     22.932 |   1.0432 |     31.655 |     3.2
+   29 |   0.7167 |     22.509 |   1.0380 |     31.085 |     3.3
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 128
+Descriptors dimension: 1136
+Feedforward dimension: 128
+Encoder layers: 3
+Decoder layers: 3
+Attention heads: 4
+Activation: relu
+Dropout: 0.1
+Trainable parameters: 1,076,002
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.3051 |     57.400 |   1.5249 |     44.664 |     0.1
+    2 |   1.4848 |     43.371 |   1.3236 |     40.647 |     0.3
+    3 |   1.3303 |     40.590 |   1.2341 |     38.969 |     0.5
+    4 |   1.2400 |     38.371 |   1.1692 |     37.380 |     0.6
+    5 |   1.1655 |     36.241 |   1.1262 |     36.631 |     0.8
+    6 |   1.1050 |     34.490 |   1.0843 |     34.532 |     0.9
+    7 |   1.0516 |     33.124 |   1.0466 |     33.183 |     1.1
+    8 |   1.0055 |     31.582 |   1.0224 |     32.824 |     1.2
+    9 |   0.9594 |     29.887 |   0.9949 |     31.954 |     1.4
+   10 |   0.9167 |     29.132 |   0.9854 |     31.355 |     1.5
+   11 |   0.8735 |     27.365 |   0.9750 |     30.456 |     1.7
+   12 |   0.8393 |     26.407 |   0.9596 |     30.366 |     1.8
+   13 |   0.8046 |     25.317 |   0.9425 |     29.766 |     2.0
+   14 |   0.7627 |     23.979 |   0.9645 |     30.336 |     2.1
+   15 |   0.7398 |     23.445 |   0.9357 |     28.417 |     2.3
+   16 |   0.7097 |     22.525 |   0.9391 |     28.327 |     2.4
+   17 |   0.6787 |     21.303 |   0.9430 |     28.657 |     2.6
+   18 |   0.6483 |     20.135 |   0.9266 |     28.447 |     2.7
+   19 |   0.6222 |     19.948 |   0.9315 |     28.687 |     2.9
+   20 |   0.6014 |     18.963 |   0.9291 |     28.327 |     3.0
+   21 |   0.5790 |     18.170 |   0.9369 |     28.058 |     3.2
+   22 |   0.5530 |     17.261 |   0.9217 |     27.578 |     3.3
+   23 |   0.5385 |     16.958 |   0.9425 |     28.088 |     3.5
+   24 |   0.5241 |     16.535 |   0.9283 |     27.188 |     3.6
+   25 |   0.5039 |     15.978 |   0.9417 |     27.218 |     3.8
+   26 |   0.4845 |     15.285 |   0.9417 |     27.368 |     3.9
+Early stopping
+
+Model: Seq2Seq Multimodal Transformer
+Source index: <Seq2Seq Index with 47 items>
+Target index: <Seq2Seq Index with 34 items>
+Max sequence length: 800
+Embedding dimension: 64
+Descriptors dimension: 1136
+Feedforward dimension: 256
+Encoder layers: 4
+Decoder layers: 4
+Attention heads: 2
+Activation: relu
+Dropout: 0.0
+Trainable parameters: 602,658
+
+Training started
+X_train.shape: torch.Size([3027, 702])
+Y_train.shape: torch.Size([3027, 7])
+X_dev.shape: torch.Size([556, 266])
+Y_dev.shape: torch.Size([556, 7])
+Epochs: 500
+Learning rate: 0.0001
+Weight decay: 0.0001
+Epoch | Train                 | Development           | Minutes
+      | Loss     | Error Rate | Loss     | Error Rate |
+---------------------------------------------------------------
+    1 |   2.4186 |     58.744 |   1.7480 |     43.705 |     0.1
+    2 |   1.5959 |     43.195 |   1.4906 |     41.697 |     0.2
+    3 |   1.4085 |     40.238 |   1.3478 |     39.329 |     0.3
+    4 |   1.2938 |     37.837 |   1.2706 |     37.740 |     0.5
+    5 |   1.2047 |     35.558 |   1.2267 |     37.290 |     0.6
+    6 |   1.1302 |     33.823 |   1.1643 |     35.462 |     0.7
+    7 |   1.0700 |     32.574 |   1.1143 |     33.303 |     0.8
+    8 |   1.0081 |     30.569 |   1.0846 |     33.273 |     0.9
+    9 |   0.9526 |     28.862 |   1.0543 |     32.284 |     1.0
+   10 |   0.9019 |     27.012 |   1.0174 |     30.935 |     1.2
+   11 |   0.8520 |     25.741 |   1.0010 |     30.576 |     1.3
+   12 |   0.8093 |     24.364 |   0.9917 |     30.396 |     1.4
+   13 |   0.7683 |     22.988 |   0.9549 |     29.077 |     1.5
+   14 |   0.7198 |     21.385 |   0.9623 |     29.766 |     1.6
+   15 |   0.6842 |     20.152 |   0.9425 |     28.088 |     1.7
+   16 |   0.6542 |     19.414 |   0.9287 |     28.297 |     1.9
+   17 |   0.6174 |     18.346 |   0.9314 |     28.297 |     2.0
+   18 |   0.5876 |     17.245 |   0.9342 |     28.237 |     2.1
+   19 |   0.5543 |     16.309 |   0.9138 |     27.158 |     2.2
+   20 |   0.5304 |     15.615 |   0.9175 |     27.368 |     2.3
+   21 |   0.5066 |     14.789 |   0.9016 |     26.799 |     2.4
+   22 |   0.4836 |     14.035 |   0.9111 |     26.409 |     2.6
+   23 |   0.4542 |     13.363 |   0.9034 |     26.319 |     2.7
+   24 |   0.4304 |     12.653 |   0.9194 |     26.679 |     2.8
+   25 |   0.4155 |     12.102 |   0.9118 |     25.510 |     2.9
+Early stopping
+
