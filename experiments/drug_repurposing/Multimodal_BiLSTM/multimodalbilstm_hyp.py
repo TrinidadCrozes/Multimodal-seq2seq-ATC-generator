@@ -107,7 +107,7 @@ def random_search(max_evals, seed, source_index, target_index, X_train, train_de
             X_val2,
             val_descriptors2,
             predictions = 6, # max length of the predicted sequence
-            beam_width = 3,
+            beam_width = 10,
             batch_size = 32, 
             progress_bar = 0
         )
