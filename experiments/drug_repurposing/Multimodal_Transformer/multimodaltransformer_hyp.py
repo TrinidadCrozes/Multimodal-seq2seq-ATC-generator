@@ -46,13 +46,16 @@ def hyperparametersselection(seed, source_index, target_index, X_train, X_val, X
     df_tests = df_tests.sort_values(by = "Precision nivel1")
     df_tests = pd.read_csv(f'mmtransformer_results{seed}.csv')
     df_tests['F1 nivel1'] = 2*((df_tests['Precision nivel1'] * df_tests['Recall nivel1'])/(df_tests['Precision nivel1'] + df_tests['Recall nivel1']))
-    df_tests = df_tests.sort_values(by = "F1 nivel1", ascending=False)
+    df_tests['F1 nivel4'] = 2*((df_tests['Precision nivel4'] * df_tests['Recall nivel4'])/(df_tests['Precision nivel4'] + df_tests['Recall nivel4']))
+    df_tests['F1 promedio'] = (df_tests['F1 nivel1'] + df_tests['F1 nivel4'])/2
+    df_tests = df_tests.sort_values(by = "F1 promedio", ascending=False)
     df_tests.to_csv(f's_mmtransformer_results{seed}.csv', index = False)
     return df_tests.loc[0]
 
 def random_search(max_evals, seed, source_index, target_index, X_train, train_descriptors, y_train, X_val, X_val2, val_descriptors, val_descriptors2, y_val, hyperparameters_grid):
     tested_params = set()
-    df_tests = pd.DataFrame(columns = ['#epochs', 'embedding_dim', 'feedforward_dim', 'enc_layers', 'dec_layers', 'attention_heads', 'dropout', 'weight_decay', 'learning_rate', 'Precision nivel1', 'Precision nivel2', 'Precision nivel3', 'Precision nivel4', 'Recall nivel1', 'Recall nivel2', 'Recall nivel3', 'Recall nivel4', 'Drugs that have at least one match'], index = list(range(max_evals)))
+    stdout_jupyter = sys.stdout
+    df_tests = pd.DataFrame(columns = ['#epochs', 'embedding_dim', 'feedforward_dim', 'enc_layers', 'dec_layers', 'attention_heads', 'dropout', 'weight_decay', 'learning_rate', 'Precision nivel1', 'Precision nivel2', 'Precision nivel3', 'Precision nivel4', 'Recall nivel1', 'Recall nivel2', 'Recall nivel3', 'Recall nivel4', 'Drugs that have at least one match', 'Precision', 'Recall', 'F1'], index = list(range(max_evals)))
     sys.stdout = open(f'log{seed}.txt', 'w')
     for i in range(max_evals):
         while True:
@@ -123,8 +126,12 @@ def random_search(max_evals, seed, source_index, target_index, X_train, train_de
                 
         precision_1, precision_2, precision_3, precision_4 = defined_metrics.precision(predictions, f"../Datasets/Rep_val_set{seed}.csv", 'ATC Codes')
         recall_1, recall_2, recall_3, recall_4, comp = defined_metrics.recall(predictions, f"../Datasets/Rep_val_set{seed}.csv", 'ATC Codes')
-        df_tests.iloc[i, :] = [f"{ep}", f"{random_params['embedding_dim']}", f"{random_params['feedforward_dim']}", f"{random_params['enc_layers']}", f"{random_params['dec_layers']}", f"{random_params['attention_heads']}", f"{random_params['dropout']}", f"{random_params['weight_decays']}", f"{random_params['learning_rates']}", f"{precision_1}", f"{precision_2}", f"{precision_3}", f"{precision_4}", f"{recall_1}", f"{recall_2}", f"{recall_3}", f"{recall_4}", f"{comp}"]
+        precisions, recalls, f1s = defined_metrics.complete_metrics(predictions, f'../Datasets/Rep_val_set{seed}.csv', 'ATC Codes', 3)
+        precisions_average = sum(precisions)/len(precisions)
+        recalls_average = sum(recalls)/len(recalls)
+        f1s_average = sum(f1s)/len(f1s)
+        df_tests.iloc[i, :] = [f"{ep}", f"{random_params['embedding_dim']}", f"{random_params['feedforward_dim']}", f"{random_params['enc_layers']}", f"{random_params['dec_layers']}", f"{random_params['attention_heads']}", f"{random_params['dropout']}", f"{random_params['weight_decays']}", f"{random_params['learning_rates']}", f"{precision_1}", f"{precision_2}", f"{precision_3}", f"{precision_4}", f"{recall_1}", f"{recall_2}", f"{recall_3}", f"{recall_4}", f"{comp}", f"{precisions_average}", f"{recalls_average}", f"{f1s_average}"]
         df_tests.to_csv(f"mmtransformer_results{seed}.csv", index = False)
-    sys.stdout = sys.__stdout__
+    sys.stdout = stdout_jupyter
     return df_tests
 

@@ -47,7 +47,9 @@ def hyperparametersselection(seed, source_index, target_index, X_train, X_val, X
     df_tests = df_tests.sort_values(by = "Precision nivel1")
     df_tests = pd.read_csv(f'bilstm_results{seed}.csv')
     df_tests['F1 nivel1'] = 2*((df_tests['Precision nivel1'] * df_tests['Recall nivel1'])/(df_tests['Precision nivel1'] + df_tests['Recall nivel1']))
-    df_tests = df_tests.sort_values(by = "F1 nivel1", ascending=False)
+    df_tests['F1 nivel4'] = 2*((df_tests['Precision nivel4'] * df_tests['Recall nivel4'])/(df_tests['Precision nivel4'] + df_tests['Recall nivel4']))
+    df_tests['F1 promedio'] = (df_tests['F1 nivel1'] + df_tests['F1 nivel4'])/2
+    df_tests = df_tests.sort_values(by = "F1 promedio", ascending=False)
     df_tests.to_csv(f'sortedbilstm_results{seed}.csv', index = False)
     return df_tests.loc[0]
 

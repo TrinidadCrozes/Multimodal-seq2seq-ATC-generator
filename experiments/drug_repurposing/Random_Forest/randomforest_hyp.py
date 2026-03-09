@@ -365,7 +365,9 @@ def hyperparametersselection(seed):
     df_tests = df_tests.sort_values(by = "Precision nivel1")
     df_tests = pd.read_csv(f'randomforest_results{seed}.csv', keep_default_na=False)
     df_tests['F1 nivel1'] = 2*((df_tests['Precision nivel1'] * df_tests['Recall nivel1'])/(df_tests['Precision nivel1'] + df_tests['Recall nivel1']))
-    df_tests = df_tests.sort_values(by = "F1 nivel1", ascending=False)
+    df_tests['F1 nivel4'] = 2*((df_tests['Precision nivel4'] * df_tests['Recall nivel4'])/(df_tests['Precision nivel4'] + df_tests['Recall nivel4']))
+    df_tests['F1 promedio'] = (df_tests['F1 nivel1'] + df_tests['F1 nivel4'])/2
+    df_tests = df_tests.sort_values(by = "F1 promedio", ascending=False)
     df_tests.to_csv(f'sortedrandomforest_results{seed}.csv', index = False)
     best_combination = (pd.read_csv(f"sortedrandomforest_results{seed}.csv", keep_default_na=False)).loc[0]
     return best_combination
