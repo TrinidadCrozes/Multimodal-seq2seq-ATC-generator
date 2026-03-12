@@ -2,11 +2,7 @@
 
 The manuscript associated with this repository is currently under review. 
 
----
-
-## A multimodal sequence-to-sequence model for automatic assignment of ATC codes in drug discovery and repurposing. 
-
---- 
+# A multimodal sequence-to-sequence model for automatic assignment of ATC codes in drug discovery and repurposing. 
 
 ## Requirements
 - Python=3.12.4
@@ -19,14 +15,10 @@ The manuscript associated with this repository is currently under review.
 - matplotlib=3.10.5
 - tqdm=4.66.4
 
----
-
 ## Data
 
 Our dataset is available in the [data](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/tree/main/data) directory.
 The complete list of molecular descriptors is available in [descriptors_calc/3203_descriptors.csv](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/blob/main/descriptors_calc/3203_descriptors.csv) file.
-
---- 
 
 ## Experiments
 
@@ -66,8 +58,6 @@ The [experiments/varying_#predictions_repurposing](https://github.com/TrinidadCr
 - A folder for each baseline and proposed method, containing the source code for model evaluation when predicting from one to ten ATC codes,
 - A script used to generate the plots for each metric, and
 - A `figs` folder containing the resulting figures.
-
---- 
 
 ## Seq2seq
 
