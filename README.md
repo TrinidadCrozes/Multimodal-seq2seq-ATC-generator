@@ -18,7 +18,8 @@ The manuscript associated with this repository is currently under review.
 ## Data
 
 Our dataset is available in the [data](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/tree/main/data) directory.
-The complete list of molecular descriptors is available in [descriptors_calc/3203_descriptors.csv](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/blob/main/descriptors_calc/3203_descriptors.csv) file.
+
+The complete list of molecular descriptors is available in the [descriptors_calc/3203_descriptors.csv](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/blob/main/descriptors_calc/3203_descriptors.csv) file.
 
 ## Experiments
 
@@ -33,11 +34,13 @@ The directory [experiments/new_compounds](https://github.com/TrinidadCrozes/Mult
   -  a CSV file with the experimental results.
 
 **Meta-model**
+
 The implementation of the meta-model and a CSV file containing the metric results for this scenario can be found in the [experiments/meta-model](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/tree/main/experiments/meta-model) directory.
 
 **Variation of the number of predicted ATC codes from one to ten**
+
 This folder follows a similar structure as in the new_compounds directory. 
-The [experiments/varying_#predictions](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/tree/main/experiments/varying_#predictions) directory contains:
+The [experiments/varying_#predictions](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/tree/main/experiments/varying_%23predictions) directory contains:
 - A folder for each baseline and proposed method, containing the source code for model evaluation when predicting from one to ten ATC codes,
 - A script used to generate the plots for each metric, and
 - A `figs` folder containing the resulting figures.
@@ -51,10 +54,12 @@ The directory [experiments/drug_repurposing](https://github.com/TrinidadCrozes/M
   -  a CSV file with the experimental results.
 
 **Meta-model**
+
 The implementation of the meta-model and a CSV file containing the metric results for this scenario can be found in the [experiments/meta-model_repurposing](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/tree/main/experiments/meta-model_repurposing) directory.
 
 **Variation of the number of predicted ATC codes from one to ten**
-The [experiments/varying_#predictions_repurposing](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/tree/main/experiments/varying_#predictions_repurposing) directory contains:
+
+The [experiments/varying_#predictions_repurposing](https://github.com/TrinidadCrozes/Multimodal-seq2seq-ATC-generator/tree/main/experiments/varying_%23predictions_repurposing) directory contains:
 - A folder for each baseline and proposed method, containing the source code for model evaluation when predicting from one to ten ATC codes,
 - A script used to generate the plots for each metric, and
 - A `figs` folder containing the resulting figures.
@@ -62,4 +67,5 @@ The [experiments/varying_#predictions_repurposing](https://github.com/TrinidadCr
 ## Seq2seq
 
 The source code in this package was taken and modified from the [pytorch_beam_search](https://github.com/jarobyte91/pytorch_beam_search) package.
+
 The original implementation was adapted to support ATC code generation and the multimodal architecture proposed in our work.
