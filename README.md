@@ -68,4 +68,4 @@ The [experiments/varying_#predictions_repurposing](https://github.com/TrinidadCr
 
 The source code in this package was taken and modified from the [pytorch_beam_search](https://github.com/jarobyte91/pytorch_beam_search) package.
 
-The original implementation was adapted to support ATC code generation and the multimodal architecture proposed in our work.
+The original implementation was adapted to support ATC code generation and we added the multimodal architecture proposed in our work and the source code for the performance metrics.
