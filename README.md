@@ -14,6 +14,7 @@ The manuscript associated with this repository is currently under review.
 - scikit-learn=1.5.2
 - matplotlib=3.10.5
 - tqdm=4.66.4
+- mordredcommunity[full]=2.0.6
 
 ## Data
 
