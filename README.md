@@ -1,7 +1,3 @@
-# Multimodal-seq2seq-ATC-generator
-
-The manuscript associated with this repository is currently under review. 
-
 # A multimodal sequence-to-sequence model for automatic assignment of ATC codes in drug discovery and repurposing. 
 
 ## Requirements
