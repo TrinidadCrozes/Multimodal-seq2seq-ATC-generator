@@ -1,5 +1,6 @@
 # A multimodal sequence-to-sequence model for automatic assignment of ATC codes in drug discovery and repurposing. 
 
+The Anatomical Therapeutic Chemical (ATC) code is a drug classification system that indicates the therapeutic potential use of a compound. Predicting ATC codes for drugs using automatic approaches is key to guide clinical trials and for drug repurposing. However, such automatic assignment is challenging due to the hierarchical organization of the code in four levels, possible polypharmacological behavior, and the imbalance and scarcity of annotated data in relation to the large number of compounds and possible ATC codes a drug may have. In this work, we propose a novel multimodal generative approach for predicting ATC codes, which leverages molecular information using a sequence-to-sequence architecture. Our hypothesis explores the idea that describing the chemical structure of the input compounds using two different representations, i.e., modes, the SMILES code and its molecular descriptors, provides complementary information, hence improving the accuracy of the predictions. Furthermore, given the multilabel nature of generative sequence-based models, we also present an additional prediction method to determine when to stop generating ATC labels for each compound.
 ## Requirements
 - Python=3.12.4
 - pandas=2.2.2
@@ -66,3 +67,10 @@ The [experiments/varying_#predictions_repurposing](https://github.com/TrinidadCr
 The source code in this package was taken and modified from the [pytorch_beam_search](https://github.com/jarobyte91/pytorch_beam_search) package.
 
 The original implementation was adapted to support ATC code generation and we added the multimodal architecture proposed in our work and the source code for the performance metrics.
+
+## Citation
+
+Please cite our paper if our dataset or code are helpful to you.
+
+[Crozes, T., Ulzurrun, E., Páez, J. A., Campillo, N. E., Soto, A. J., & Ponzoni, I. (2026). A Multimodal Sequence-to-Sequence Model for Automatic Assignment of ATC Codes in Drug Discovery and Repurposing. Journal of Chemical Information and Modeling, 66(8), 4472-4483.](https://pubs.acs.org/doi/10.1021/acs.jcim.6c00118)
+
